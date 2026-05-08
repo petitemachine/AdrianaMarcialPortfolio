@@ -1,104 +1,183 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Adriana Marcial Personal Website </title>
+
+    <title>Adriana Marcial Personal Website</title>
+
     <link rel="stylesheet" href="styles.css">
+
     <script src="https://kit.fontawesome.com/a85fc88fc8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/rvv1kdh.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.typekit.net/rvv1kdh.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
+
     <div id="container">
+
         <header>
+
             <div class="logo">
-                <img src="images/logo_adrianamarcialux.svg" alt="Adriana Marcial Personal Website" width="90px">
+                <img src="images/logo_adrianamarcialux.svg"
+                    alt="Adriana Marcial Personal Website"
+                    width="90">
             </div>
 
             <div class="menu">
-               <nav>
-
-                    <a href=index.html> HOME </a>
-                    <a href=about_me.html> ABOUT ME</a>
-                    <a href=portofolio.html>PORTFOLIO</a>
-                    <a href=contactme.html> CONTACT </a>
-
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="about_me.html">ABOUT ME</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="contactme.html">CONTACT</a>
                 </nav>
             </div>
+
         </header>
 
         <main>
-            <h1> Get in touch!</h1>
+
+            <h1>Get in touch!</h1>
+
             <div class="contactbox">
-
-
-
-                
-                <br>
 
                 <div class="formcontainer">
 
+                    <form id="contact-form"
+                        action="https://formspree.io/f/mvzlbwrk"
+                        method="POST">
 
-                    <form action="/my-handing_form_page" method="post">
+                        <label for="fname">First name</label>
+                        <input type="text"
+                            id="fname"
+                            name="firstName"
+                            required>
+
+                        <label for="lname">Last name</label>
+                        <input type="text"
+                            id="lname"
+                            name="lastName"
+                            required>
+
+                        <label for="email">Email</label>
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            required>
+
+                        <label for="message">Leave a comment</label>
+
+                        <textarea id="message"
+                            name="message"
+                            rows="8"
+                            required></textarea>
+
+                        <button type="submit" class="button">
+                            Send Message
+                        </button>
+
+                        <p id="form-status"></p>
+
                     </form>
-                    <form action="/action_page.php">
 
-                        <label for="lname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" value="John"><br>
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                        <label for="lname">Email:</label><br>
-                        <input type="email" id="lname" name="lname" value="johndoe@email.com"><br><br>
-
-                        <label for="fname"> Leave a comment:</label> <br />
-                        <input type="text" id="fcomment" name="fcomment" <textarea name="message" style="width:360px; height:180px;"> </textarea><br><br> <br>
-                        <input type="submit" class="button" value="Submit">
-                    </form>
                 </div>
-
 
                 <div class="contactpic">
-                    <h9>Adriana Marcial <br>Tel +353 87 357 8235 <br>E-mail: adrianatdu@hotmail.com</h9>
 
-                    <div class="contacttext">
-                    </div>
+                    <p>
+                        Adriana Marcial <br>
+                        Tel: +353 87 357 8235 <br>
+                        E-mail: adrianatdu@hotmail.com
+                    </p>
 
-                    <img src="images/AdrianaMarcialandtheGiantPlantvintage.jpg" alt="Adriana Marcial-Manchester2017" width="359px" ;>
+                    <img src="images/AdrianaMarcialandtheGiantPlantvintage.jpg"
+                        alt="Adriana Marcial Manchester 2017"
+                        width="359">
 
                 </div>
 
-
             </div>
-        </main>
 
+        </main>
 
         <footer>
 
             <div class="copy">
-                <h6> &copy;Copyright 2021 Adriana Marcial </h6>
+                <h6>&copy; Copyright 2026 Adriana Marcial</h6>
             </div>
 
             <div class="social">
-                <a class="fab fa-instagram fa-2x" style='font-size:20px;color:white' href="https://www.instagram.com/petitemachineux/"></a>
-                <a class="fab fa-facebook-f fa-2x" style='font-size:20px;color:white' href="https://www.facebook.com/drik.mrz"></a>
-                <a class="fab fa-twitter fa-2x" style='font-size:20px;color:white' href="https://twitter.com/home"></a>
-                <a class="fab fa-linkedin fa-2x" style='font-size:20px;color:white' href="www.linkedin.com/in/adrianacruise"></a>
+
+                <a class="fab fa-instagram fa-2x"
+                    style="font-size:20px;color:white"
+                    href="https://www.instagram.com/petitemachineux/"></a>
+
+                <a class="fab fa-facebook-f fa-2x"
+                    style="font-size:20px;color:white"
+                    href="https://www.facebook.com/drik.mrz"></a>
+
+                <a class="fab fa-twitter fa-2x"
+                    style="font-size:20px;color:white"
+                    href="https://twitter.com/home"></a>
+
+                <a class="fab fa-linkedin fa-2x"
+                    style="font-size:20px;color:white"
+                    href="https://www.linkedin.com/in/adrianacruise"></a>
+
             </div>
 
         </footer>
+
     </div>
-    </div>
+
+    <script>
+
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+
+        async function handleSubmit(event) {
+
+            event.preventDefault();
+
+            const data = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+
+            }).then(response => {
+
+                if (response.ok) {
+
+                    status.innerHTML = "✨ Thanks! Your message has been sent.";
+                    form.reset();
+
+                } else {
+
+                    status.innerHTML = "Oops! Something went wrong.";
+
+                }
+
+            }).catch(error => {
+
+                status.innerHTML = "Oops! There was a problem submitting your form.";
+
+            });
+        }
+
+        form.addEventListener("submit", handleSubmit);
+
+    </script>
 
 </body>
-</html>
 
-    </body>
 </html>
