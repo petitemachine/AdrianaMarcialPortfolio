@@ -10,6 +10,19 @@ body {
 	margin: 0 auto;
 }
 
+.btn-contact {
+	display: inline-block;
+	background-color: #564534;
+	color: white;
+	padding: 12px 32px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 15px;
+	letter-spacing: 1px;
+	transition: background-color 0.2s;
+}
+.btn-contact:hover { background-color: #3e3027; color: white; }
+
 /* ===== TYPOGRAPHY ===== */
 h1 {
 	font-family: jaf-domus-titling-web, sans-serif;
