@@ -1,6 +1,6 @@
 /* ===== BASE ===== */
 body {
-	background-color: #F2EDE4;
+	background-color: #FFFFFF;
 }
 
 #container {
@@ -14,7 +14,7 @@ body {
 h1 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-weight: 600;
-	color: #866337;
+	color: #E9B940;
 	text-align: center;
 }
 
@@ -23,14 +23,14 @@ h2 {
 	font-family: 'atocha';
 	font-style: normal;
 	font-size: 50px;
-	color: #866337;
+	color: #E9B940;
 	text-align: center;
 }
 
 h3 {
 	font-family: jaf-domus-titling-web, Helvetica, sans-serif;
 	font-size: 27px;
-	color: #9A7240;
+	color: #B6812C;
 	text-align: center;
 }
 
@@ -50,7 +50,7 @@ p {
 
 /* ===== NAVBAR ===== */
 .site-navbar {
-	background-color: #866337;
+	background-color: #E9B940;
 	min-height: 90px;
 	padding: 0 20px;
 }
@@ -81,13 +81,13 @@ p {
 
 /* ===== MAIN ===== */
 main {
-	background-color: #F2EDE4;
+	background-color: #FFFFFF;
 	width: 100%;
 }
 
 /* ===== FOOTER ===== */
 footer {
-	background-color: #2C2A26;
+	background-color: #564534;
 	width: 100%;
 	min-height: 90px;
 	display: flex;
@@ -116,7 +116,7 @@ h6 {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	background-color: #F2EDE4;
+	background-color: #FFFFFF;
 	gap: 0;
 }
 
@@ -151,7 +151,7 @@ h6 {
 	align-items: center;
 	gap: 40px;
 	padding: 50px 40px;
-	background-color: #F2EDE4;
+	background-color: #FFFFFF;
 }
 
 .about-hero-photo {
@@ -178,7 +178,7 @@ h6 {
 	text-align: left;
 	font-size: 12px;
 	letter-spacing: 2px;
-	color: #866337;
+	color: #E9B940;
 	margin-bottom: 20px;
 }
 
@@ -194,7 +194,7 @@ h6 {
 .about-section {
 	padding: 40px 30px;
 	border-top: 1px solid #e8e0d4;
-	background-color: #F2EDE4;
+	background-color: #FFFFFF;
 }
 
 .about-section.white {
@@ -205,7 +205,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 11px;
 	font-weight: 700;
-	color: #866337;
+	color: #E9B940;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	margin-bottom: 24px;
@@ -235,7 +235,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 11px;
 	font-weight: 700;
-	color: #866337;
+	color: #E9B940;
 	letter-spacing: 2px;
 	margin-bottom: 12px;
 	display: block;
@@ -249,9 +249,9 @@ h6 {
 }
 
 .skill-tag {
-	background: #F2EDE4;
+	background: #FFFFFF;
 	border: 1px solid #d4c5a9;
-	color: #5a3e22;
+	color: #564534;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 12px;
 	padding: 5px 14px;
@@ -259,8 +259,8 @@ h6 {
 }
 
 .skill-tag.accent {
-	background: #866337;
-	border-color: #866337;
+	background: #E9B940;
+	border-color: #E9B940;
 	color: white;
 }
 
@@ -320,7 +320,7 @@ h6 {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	background-color: #866337;
+	background-color: #E9B940;
 	border-radius: 6px;
 	padding: 28px 16px;
 	text-decoration: none;
@@ -328,7 +328,7 @@ h6 {
 }
 
 .nav-box:hover {
-	background-color: #6B4F2B;
+	background-color: #4a3828;
 }
 
 .nav-box__icon { font-size: 32px; color: white; }
@@ -358,7 +358,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 15px;
 	font-weight: 600;
-	color: #866337;
+	color: #E9B940;
 	text-align: center;
 	letter-spacing: 2px;
 	padding-bottom: 24px;
@@ -385,7 +385,7 @@ h6 {
 	display: flex;
 	align-items: flex-start;
 	background-color: #ffffff;
-	border-left: 4px solid #866337;
+	border-left: 4px solid #E9B940;
 	border-radius: 4px;
 	padding: 16px 18px;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.07);
@@ -397,7 +397,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 26px;
 	font-weight: 700;
-	color: #866337;
+	color: #E9B940;
 	min-width: 44px;
 	line-height: 1;
 	padding-top: 2px;
@@ -407,7 +407,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 12px;
 	font-weight: 700;
-	color: #866337;
+	color: #E9B940;
 	letter-spacing: 2px;
 	text-align: left;
 	margin-bottom: 6px;
@@ -452,7 +452,7 @@ h6 {
 	flex-direction: column;
 	align-items: center;
 	gap: 6px;
-	background-color: #866337;
+	background-color: #E9B940;
 	padding: 14px;
 }
 
@@ -483,7 +483,7 @@ h8 {
 h9 {
 	font-family: domus-titling-web, sans-serif;
 	font-size: 24px;
-	color: #9A7240;
+	color: #B6812C;
 	text-align: center;
 	padding-bottom: 16px;
 	display: block;
@@ -501,7 +501,7 @@ h9 {
 	top: 8px;
 	bottom: 0;
 	width: 1px;
-	background: #866337;
+	background: #E9B940;
 	opacity: 0.25;
 }
 .timeline-item {
@@ -518,13 +518,13 @@ h9 {
 	width: 9px;
 	height: 9px;
 	border-radius: 50%;
-	background: #866337;
+	background: #E9B940;
 }
 .timeline-year {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 12px;
 	font-weight: 700;
-	color: #866337;
+	color: #E9B940;
 	min-width: 42px;
 	padding-top: 2px;
 	flex-shrink: 0;
@@ -532,7 +532,7 @@ h9 {
 .timeline-role {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 14px;
-	color: #2C2A26;
+	color: #564534;
 	margin: 0 0 4px;
 	font-weight: 600;
 }
@@ -558,12 +558,12 @@ h9 {
 	flex: 1;
 	min-width: 260px;
 	max-width: 420px;
-	color: #866337;
+	color: #E9B940;
 }
 
 label {
 	font-family: Helvetica Neue;
-	color: #866337;
+	color: #E9B940;
 	font-size: 14px;
 }
 
@@ -586,7 +586,7 @@ textarea {
 }
 
 .button {
-	background-color: #866337;
+	background-color: #E9B940;
 	border: none;
 	color: white;
 	padding: 12px 40px;
@@ -596,7 +596,7 @@ textarea {
 	width: 100%;
 }
 
-.button:hover { background-color: #6B4F2B; }
+.button:hover { background-color: #4a3828; }
 
 .contactpic {
 	flex: 1;
@@ -614,5 +614,5 @@ textarea {
 p3 {
 	font-family: Helvetica;
 	font-size: 12px;
-	color: #866337;
+	color: #E9B940;
 }
