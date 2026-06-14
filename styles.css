@@ -629,3 +629,11 @@ p3 {
 	font-size: 12px;
 	color: #E9B940;
 }
+
+.photo-mosaic img {
+	cursor: zoom-in;
+	transition: opacity 0.2s;
+}
+.photo-mosaic img:hover {
+	opacity: 0.85;
+}

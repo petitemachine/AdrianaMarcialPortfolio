@@ -107,37 +107,49 @@
 				<div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 24px;">
 					<div>
 						<span class="skills-group-label" style="margin-bottom:10px;">WHAT I MAKE</span>
+						<p style="font-size:13px; color:#707070; margin-bottom:12px; padding:0;">From sourdough and conchas to handmade piñatas and party crafts — I put the same care into everything I make by hand.</p>
 						<div class="photo-mosaic">
-							<img src="images/chocolate_babka2.jpg" alt="Chocolate babka">
-							<img src="images/pan_de_muerto.jpg" alt="Pan de muerto">
-							<img src="images/Pastel_tres_leches.jpg" alt="Tres leches">
-							<img src="images/sourdough_sesameseeds.jpg" alt="Sourdough">
-							<img class="wide" src="images/concha_chocolate.jpg" alt="Conchas de chocolate">
-							<img src="images/handcrafts_party.jpg" alt="Handcrafts">
-							<img src="images/carved_pumpkin.jpg" alt="Carved pumpkin">
+							<img src="images/jalapenoandcheess_sourdough.jpg" alt="Sourdough jalapeño and cheese" title="Sourdough with jalapeño & Irish cheddar" onclick="openLightbox(this)">
+							<img src="images/chocolate_babka2.jpg" alt="Chocolate babka" title="Chocolate babka" onclick="openLightbox(this)">
+							<img src="images/pan_de_muerto.jpg" alt="Pan de muerto" title="Pan de muerto — a Mexican tradition" onclick="openLightbox(this)">
+							<img src="images/Matilda_chocolate_cake.jpg" alt="Chocolate cake" title="Matilda chocolate cake" onclick="openLightbox(this)">
+							<img src="images/Pastel_tres_leches.jpg" alt="Pastel tres leches" title="Pastel de tres leches" onclick="openLightbox(this)">
+							<img class="wide" src="images/conchas_chocolate.jpg" alt="Conchas" title="Conchas — pan dulce mexicano" onclick="openLightbox(this)">
+							<img src="images/salad_custom.jpg" alt="Salad costume" title="Sean's salad costume — handmade" onclick="openLightbox(this)">
+							<img src="images/carved_pumpkin.jpg" alt="Carved pumpkin" title="Carved pumpkin — Halloween artcraft" onclick="openLightbox(this)">
 						</div>
 					</div>
 					<div>
 						<span class="skills-group-label" style="margin-bottom:10px;">WHAT I SHOOT</span>
+						<p style="font-size:13px; color:#707070; margin-bottom:12px; padding:0;">Nikon D7100 — always looking for the right light, the right moment. One lens is a Lomography.</p>
 						<div class="photo-mosaic" style="grid-template-columns: 1fr 1fr;">
-							<img src="images/joshuathree.jpg" alt="Joshua Tree" style="height:120px;">
-							<img src="images/LOMOGRAPHY_YELLOWFLOWER.JPG" alt="Yellow flower" style="height:120px;">
-							<img src="images/mapple_leaves.JPG" alt="Maple leaves" style="height:120px;">
-							<img src="images/BERLIN_BLUETUBES.JPG" alt="Berlin blue tubes" style="height:120px;">
+							<img src="images/joshuathree.jpg" alt="Joshua Tree" style="height:120px;" title="Joshua Tree, California" onclick="openLightbox(this)">
+							<img src="images/cliffs_moher.JPG" alt="Cliffs of Moher" style="height:120px;" title="Cliffs of Moher, Ireland" onclick="openLightbox(this)">
+							<img src="images/poolbeg_Dublin.jpg" alt="Poolbeg, Dublin" style="height:120px;" title="Poolbeg chimneys, Dublin" onclick="openLightbox(this)">
+							<img src="images/mapple_leaves.JPG" alt="Maple leaves" style="height:120px;" title="Maple leaves — Lomography lens" onclick="openLightbox(this)">
+							<img src="images/BERLIN_BLUETUBES.JPG" alt="Berlin blue tubes" style="height:120px; grid-column: span 2; width:100%; object-fit:cover;" title="Berlin blue tubes" onclick="openLightbox(this)">
 						</div>
 					</div>
 					<div>
 						<span class="skills-group-label" style="margin-bottom:10px;">WHAT I LISTEN TO</span>
+						<p style="font-size:13px; color:#707070; margin-bottom:12px; padding:0;">The soundtrack to late-night studying, weekend baking, and everything in between.</p>
 						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1nwWzSDqIUjildJt7PfsUu?utm_source=generator&theme=0&si=c328fc3a40004ff7" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 					</div>
 				</div>
+			</div>
+
+			<!-- LET'S WORK TOGETHER -->
+			<div style="background: #2C2A26; padding: 60px 40px; text-align: center;">
+				<h2 style="font-family: 'atocha', serif; color: #F2EDE4; font-size: 36px; margin-bottom: 12px;">Let's work together</h2>
+				<p style="color: rgba(242,237,228,0.7); font-size: 16px; margin-bottom: 32px; padding: 0;">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+				<a href="contactme.html" style="background: #866337; color: white; padding: 14px 40px; font-family: jaf-domus-titling-web, sans-serif; font-size: 14px; letter-spacing: 2px; text-decoration: none; border-radius: 2px;">GET IN TOUCH</a>
 			</div>
 
 		</main>
 
 		<footer>
 			<div class="copy">
-				<h6>&copy;Copyright 2021 Adriana Marcial</h6>
+				<h6>&copy;Copyright 2021–2026 Adriana Marcial</h6>
 			</div>
 			<div class="social">
 				<a class="fab fa-instagram fa-2x" style="font-size:20px;color:white" href="https://www.instagram.com/petitemachineux/"></a>
@@ -148,5 +160,26 @@
 		</footer>
 	</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out;">
+	<img id="lightbox-img" src="" alt="" style="max-width:90%; max-height:90vh; object-fit:contain; border-radius:4px;">
+	<p id="lightbox-caption" style="position:absolute; bottom:24px; left:0; width:100%; text-align:center; color:rgba(255,255,255,0.7); font-size:14px; font-family: Helvetica Neue, sans-serif;"></p>
+</div>
+
+<script>
+function openLightbox(img) {
+	const lb = document.getElementById('lightbox');
+	document.getElementById('lightbox-img').src = img.src;
+	document.getElementById('lightbox-caption').textContent = img.title || img.alt;
+	lb.style.display = 'flex';
+	document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+	document.getElementById('lightbox').style.display = 'none';
+	document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
 </body>
 </html>
