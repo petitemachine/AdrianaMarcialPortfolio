@@ -118,6 +118,11 @@ footer {
 	padding: 0 30px;
 }
 
+footer .copy p {
+	color: #ffffff;
+	margin: 0;
+}
+
 h6 {
 	font-family: Helvetica;
 	font-size: 14px;
