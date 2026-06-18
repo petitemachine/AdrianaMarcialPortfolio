@@ -109,7 +109,7 @@ main {
 
 /* ===== FOOTER ===== */
 footer {
-	background-color: #564534;
+	background-color: #1A1916;
 	width: 100%;
 	min-height: 90px;
 	display: flex;
@@ -133,7 +133,7 @@ h6 {
 .fab {
 	padding-top: 0;
 	padding-right: 16px;
-	color: white;
+	color: #E9B940;
 	font-size: 20px !important;
 }
 
