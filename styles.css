@@ -730,17 +730,19 @@ textarea {
 }
 
 .button {
-	background-color: #E9B940;
+	background-color: #1A1916;
 	border: none;
 	color: white;
-	padding: 12px 40px;
-	font-size: 15px;
+	padding: 14px 40px;
+	font-family: jaf-domus-titling-web, sans-serif;
+	font-size: 13px;
+	letter-spacing: 2px;
 	cursor: pointer;
-	border-radius: 4px;
+	border-radius: 6px;
 	width: 100%;
 }
 
-.button:hover { background-color: #4a3828; }
+.button:hover { background-color: #3a3830; }
 
 .contactpic {
 	flex: 1;
