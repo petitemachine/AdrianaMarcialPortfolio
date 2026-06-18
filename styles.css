@@ -12,7 +12,7 @@ body {
 
 .btn-contact {
 	display: inline-block;
-	background-color: #564534;
+	background-color: #1A1916;
 	color: white;
 	padding: 12px 32px;
 	border-radius: 6px;
@@ -27,7 +27,7 @@ body {
 h1 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-weight: 600;
-	color: #E9B940;
+	color: #1A1916;
 	text-align: center;
 }
 
@@ -35,7 +35,7 @@ h1 {
 	font-family: 'atocha', serif;
 	font-style: normal;
 	font-size: 50px;
-	color: #E9B940;
+	color: #1A1916;
 	text-align: center;
 	padding: 30px;
 }
@@ -45,14 +45,14 @@ h2 {
 	font-family: 'atocha';
 	font-style: normal;
 	font-size: 50px;
-	color: #E9B940;
+	color: #1A1916;
 	text-align: center;
 }
 
 h3 {
 	font-family: jaf-domus-titling-web, Helvetica, sans-serif;
 	font-size: 27px;
-	color: #B6812C;
+	color: #707070;
 	text-align: center;
 }
 
@@ -75,6 +75,10 @@ p {
 	background-color: #E9B940;
 	min-height: 90px;
 	padding: 0 20px;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .site-navbar .navbar-brand img {
@@ -82,7 +86,7 @@ p {
 }
 
 .site-navbar .nav-link {
-	color: white !important;
+	color: #1A1916 !important;
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-weight: 600;
 	font-size: 16px;
@@ -90,15 +94,15 @@ p {
 }
 
 .site-navbar .nav-link:hover {
-	color: rgba(255,255,255,0.75) !important;
+	color: #564534 !important;
 }
 
 .site-navbar .navbar-toggler {
-	border-color: rgba(255,255,255,0.5);
+	border-color: rgba(26,25,22,0.4);
 }
 
 .site-navbar .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 25, 22, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* ===== MAIN ===== */
@@ -109,13 +113,21 @@ main {
 
 /* ===== FOOTER ===== */
 footer {
-	background-color: #564534;
-	width: 100%;
+	background-color: #1A1916;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	min-height: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 30px;
+}
+
+footer .copy p {
+	color: #ffffff;
+	margin: 0;
 }
 
 h6 {
@@ -128,8 +140,138 @@ h6 {
 .fab {
 	padding-top: 0;
 	padding-right: 16px;
-	color: white;
+	color: #E9B940;
 	font-size: 20px !important;
+}
+
+/* ===== HOME PAGE — NEW HERO ===== */
+.home-hero-new {
+	padding: 40px 48px 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 60vh;
+	background: #FFFFFF;
+}
+
+.hero-top-row {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 12px;
+}
+
+.hero-avatar {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: top;
+	border: 2.5px solid #E9B940;
+	flex-shrink: 0;
+	cursor: zoom-in;
+}
+
+.hero-role {
+	font-family: jaf-domus-titling-web, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #595959;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0;
+}
+
+.hero-name {
+	font-family: 'atocha', serif;
+	font-style: normal;
+	font-size: clamp(80px, 15vw, 230px);
+	color: #1A1916;
+	line-height: 0.92;
+	letter-spacing: -3px;
+	margin-bottom: 32px;
+	text-align: center;
+	padding: 0;
+}
+
+.hero-bottom-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 20px;
+}
+
+.hero-bio {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11px;
+	color: #555;
+	line-height: 1.8;
+	text-align: left;
+	padding: 0;
+}
+
+.hero-pills {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 4px;
+	flex-shrink: 0;
+}
+
+.hero-pill-cta {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background: #1A1916;
+	color: #E9B940;
+	padding: 12px 24px;
+	border-radius: 30px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.hero-pill-available {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #2E7D32;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	white-space: nowrap;
+}
+
+.hero-pill-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #4CAF50;
+	flex-shrink: 0;
+	display: inline-block;
+}
+
+.hero-pill-location {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11px;
+	color: #707070;
+	white-space: nowrap;
+}
+
+.hero-pill-datetime {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 10px;
+	color: #707070;
+	white-space: nowrap;
+	letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+	.home-hero-new { padding: 28px 24px; min-height: auto; }
+	.hero-name { font-size: 64px; }
+	.hero-bottom-row { flex-direction: column; align-items: flex-start; gap: 16px; }
+	.hero-pills { align-items: flex-start; }
 }
 
 /* ===== HOME PAGE ===== */
@@ -200,7 +342,7 @@ h6 {
 	text-align: left;
 	font-size: 12px;
 	letter-spacing: 2px;
-	color: #E9B940;
+	color: #707070;
 	margin-bottom: 20px;
 }
 
@@ -227,7 +369,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 11px;
 	font-weight: 700;
-	color: #E9B940;
+	color: #707070;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	margin-bottom: 24px;
@@ -257,7 +399,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 11px;
 	font-weight: 700;
-	color: #E9B940;
+	color: #707070;
 	letter-spacing: 2px;
 	margin-bottom: 12px;
 	display: block;
@@ -283,7 +425,7 @@ h6 {
 .skill-tag.accent {
 	background: #E9B940;
 	border-color: #E9B940;
-	color: white;
+	color: #1A1916;
 }
 
 .personal-grid {
@@ -353,21 +495,21 @@ h6 {
 	background-color: #4a3828;
 }
 
-.nav-box__icon { font-size: 32px; color: white; }
+.nav-box__icon { font-size: 32px; color: #1A1916; }
 
 .nav-box__title {
 	font-family: jaf-domus-titling-web, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
-	color: white;
+	color: #1A1916;
 	letter-spacing: 1.5px;
 	text-align: center;
 }
 
 .nav-box__sub {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 12px;
-	color: rgba(255,255,255,0.85);
+	font-size: 13px;
+	color: #1A1916;
 	text-align: center;
 }
 
@@ -380,7 +522,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 15px;
 	font-weight: 600;
-	color: #E9B940;
+	color: #707070;
 	text-align: center;
 	letter-spacing: 2px;
 	padding-bottom: 24px;
@@ -419,7 +561,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 26px;
 	font-weight: 700;
-	color: #E9B940;
+	color: #1A1916;
 	min-width: 44px;
 	line-height: 1;
 	padding-top: 2px;
@@ -429,7 +571,7 @@ h6 {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 12px;
 	font-weight: 700;
-	color: #E9B940;
+	color: #1A1916;
 	letter-spacing: 2px;
 	text-align: left;
 	margin-bottom: 6px;
@@ -480,17 +622,17 @@ h6 {
 
 .media-card__label {
 	font-family: jaf-domus-titling-web, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
-	color: white;
+	color: #1A1916;
 	letter-spacing: 1.5px;
 	text-align: center;
 }
 
 .media-card__sub {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 12px;
-	color: rgba(255,255,255,0.85);
+	font-size: 13px;
+	color: #1A1916;
 	text-align: center;
 }
 
@@ -502,10 +644,12 @@ h8 {
 	text-align: center;
 }
 
-h9 {
-	font-family: domus-titling-web, sans-serif;
+.h9 {
+	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 24px;
-	color: #B6812C;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #1A1916;
 	text-align: center;
 	padding-bottom: 16px;
 	display: block;
@@ -585,7 +729,7 @@ h9 {
 
 label {
 	font-family: Helvetica Neue;
-	color: #E9B940;
+	color: #1A1916;
 	font-size: 14px;
 }
 
@@ -593,7 +737,7 @@ input[type="text"],
 input[type="email"],
 textarea {
 	width: 100%;
-	border: 1px solid #d4c5a9;
+	border: 1.5px solid #1A1916;
 	border-radius: 6px;
 	padding: 8px 12px;
 	margin-top: 4px;
@@ -608,17 +752,19 @@ textarea {
 }
 
 .button {
-	background-color: #E9B940;
+	background-color: #1A1916;
 	border: none;
 	color: white;
-	padding: 12px 40px;
-	font-size: 15px;
+	padding: 14px 40px;
+	font-family: jaf-domus-titling-web, sans-serif;
+	font-size: 13px;
+	letter-spacing: 2px;
 	cursor: pointer;
-	border-radius: 4px;
+	border-radius: 6px;
 	width: 100%;
 }
 
-.button:hover { background-color: #4a3828; }
+.button:hover { background-color: #3a3830; }
 
 .contactpic {
 	flex: 1;
