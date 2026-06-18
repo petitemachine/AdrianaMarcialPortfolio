@@ -75,6 +75,10 @@ p {
 	background-color: #E9B940;
 	min-height: 90px;
 	padding: 0 20px;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .site-navbar .navbar-brand img {
@@ -110,7 +114,10 @@ main {
 /* ===== FOOTER ===== */
 footer {
 	background-color: #1A1916;
-	width: 100%;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	min-height: 90px;
 	display: flex;
 	align-items: center;
