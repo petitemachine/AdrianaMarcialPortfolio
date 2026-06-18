@@ -179,7 +179,7 @@ h6 {
 .hero-name {
 	font-family: 'atocha', serif;
 	font-style: normal;
-	font-size: 100px;
+	font-size: clamp(140px, 30vw, 420px);
 	color: #1A1916;
 	line-height: 0.92;
 	letter-spacing: -3px;
@@ -198,7 +198,7 @@ h6 {
 .hero-bio {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 11px;
-	color: #aaa;
+	color: #555;
 	line-height: 1.8;
 	text-align: left;
 	padding: 0;
@@ -214,13 +214,13 @@ h6 {
 
 .hero-pill-cta {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 11px;
+	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	background: #1A1916;
 	color: #E9B940;
-	padding: 2px 10px;
-	border-radius: 10px;
+	padding: 12px 24px;
+	border-radius: 30px;
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -248,8 +248,16 @@ h6 {
 .hero-pill-location {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 11px;
-	color: #bbb;
+	color: #707070;
 	white-space: nowrap;
+}
+
+.hero-pill-datetime {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 10px;
+	color: #707070;
+	white-space: nowrap;
+	letter-spacing: 0.5px;
 }
 
 @media (max-width: 600px) {

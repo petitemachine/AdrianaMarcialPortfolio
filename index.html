@@ -80,11 +80,12 @@
 			</div>
 			<h1 class="hero-name">Adri<br>Marcial</h1>
 			<div class="hero-bottom-row">
-				<p class="hero-bio">Mexican born, based in Dublin.<br>Experience in AI Annotation, Trust &amp; Safety,<br>and Food &amp; Hospitality.</p>
+				<p class="hero-bio">Mexican born, living in Dublin.<br>Experience in AI Annotation, Trust &amp; Safety,<br>and Food &amp; Hospitality.</p>
 				<div class="hero-pills">
 					<a href="contactme.html" class="hero-pill-cta">Say Hi! Let's talk →</a>
 					<span class="hero-pill-available"><span class="hero-pill-dot"></span>Available for work</span>
 					<span class="hero-pill-location">Dublin, Ireland</span>
+					<span class="hero-pill-datetime" id="hero-datetime"></span>
 				</div>
 			</div>
 		</div>
@@ -104,6 +105,19 @@
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function updateDateTime() {
+	const el = document.getElementById('hero-datetime');
+	if (!el) return;
+	const now = new Date();
+	const date = now.toLocaleDateString('en-IE', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/Dublin' });
+	const time = now.toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Dublin' });
+	el.textContent = date + ' · ' + time;
+}
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
 
 <!-- Lightbox -->
 <div id="hero-lightbox" onclick="closeHeroLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out;">
