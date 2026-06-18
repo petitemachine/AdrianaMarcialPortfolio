@@ -146,11 +146,11 @@ h6 {
 
 /* ===== HOME PAGE — NEW HERO ===== */
 .home-hero-new {
-	padding: 40px 48px 36px;
+	padding: 40px 48px 48px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: calc(100vh - 80px);
+	min-height: 60vh;
 	background: #FFFFFF;
 }
 
@@ -186,12 +186,12 @@ h6 {
 .hero-name {
 	font-family: 'atocha', serif;
 	font-style: normal;
-	font-size: clamp(40px, 7.5vw, 115px);
+	font-size: clamp(80px, 15vw, 230px);
 	color: #1A1916;
 	line-height: 0.92;
 	letter-spacing: -3px;
 	margin-bottom: 32px;
-	text-align: left;
+	text-align: center;
 	padding: 0;
 }
 
