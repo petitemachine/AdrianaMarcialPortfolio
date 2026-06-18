@@ -730,7 +730,7 @@ input[type="text"],
 input[type="email"],
 textarea {
 	width: 100%;
-	border: 1px solid #d4c5a9;
+	border: 1.5px solid #1A1916;
 	border-radius: 6px;
 	padding: 8px 12px;
 	margin-top: 4px;
