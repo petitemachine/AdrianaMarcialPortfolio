@@ -10,6 +10,78 @@ body {
 	margin: 0 auto;
 }
 
+.main-page-nav {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	width: 100%;
+	padding: 18px 5vw;
+	background: rgba(247,245,239,.95);
+	border-bottom: 1px solid #d8d3c5;
+	backdrop-filter: blur(10px);
+	font-family: "DM Sans", Arial, sans-serif;
+}
+
+.main-page-brand {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #171713;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.main-page-brand-mark {
+	display: grid;
+	place-items: center;
+	width: 46px;
+	height: 38px;
+	border-radius: 4px;
+	background: #e9b940;
+	font-size: 16px;
+	letter-spacing: -.04em;
+}
+
+.main-page-nav-links {
+	display: flex;
+	gap: 28px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.main-page-nav-links a {
+	color: #171713;
+	text-decoration: none;
+}
+
+.main-page-nav-links a:hover,
+.main-page-nav-links a:focus-visible,
+.main-page-nav-links a[aria-current="page"] {
+	text-decoration: underline;
+	text-decoration-color: #e9b940;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 6px;
+}
+
+@media (max-width: 560px) {
+	.main-page-nav {
+		padding: 14px 20px;
+	}
+
+	.main-page-brand > span:last-child {
+		display: none;
+	}
+
+	.main-page-nav-links {
+		gap: 16px;
+		font-size: 12px;
+	}
+}
+
 .btn-contact {
 	display: inline-block;
 	background-color: #1A1916;
