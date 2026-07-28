@@ -205,9 +205,11 @@
     footer { display:flex; justify-content:space-between; gap:20px; padding:28px 5vw; background:var(--ink); color:#fff; font-size:12px; }
     footer a { color:#fff; }
     .social-links { display:flex; align-items:center; gap:14px; }
-    .social-link { display:inline-flex; align-items:center; gap:7px; text-decoration:none; }
-    .social-link:hover { color:var(--gold); }
-    .social-link svg { width:18px; height:18px; fill:currentColor; flex:none; }
+    .social-link { display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:600; }
+    .social-link svg { width:30px; height:30px; padding:6px; border-radius:7px; fill:#fff; flex:none; transition:transform .2s ease; }
+    .social-link:first-child svg { background:#0a66c2; }
+    .social-link:nth-child(2) svg { background:#d62976; }
+    .social-link:hover svg { transform:translateY(-2px); }
     @media (max-width:800px) {
       .nav-links a:nth-child(2) { display:none; }
       .hero,.case-grid,.ui-grid,.bio,.section-head { grid-template-columns:1fr; }
