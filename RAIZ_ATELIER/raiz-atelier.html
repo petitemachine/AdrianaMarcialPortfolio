@@ -133,6 +133,18 @@
     .flavour-quantities { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
     button { width:100%; padding:14px 20px; border:0; border-radius:999px; background:var(--copper-light); color:var(--ink); font:700 14px "DM Sans",sans-serif; cursor:pointer; }
     .order-note { grid-column:1/-1; margin:0; color:#eadbcf; font-size:12px; line-height:1.6; }
+    .closing-note { padding:90px 8vw; background:var(--cream); text-align:center; }
+    .closing-note::before {
+      content:"";
+      display:block;
+      width:30px;
+      height:52px;
+      margin:0 auto 24px;
+      background:var(--copper);
+      -webkit-mask:url("images/espiga.svg") center/contain no-repeat;
+      mask:url("images/espiga.svg") center/contain no-repeat;
+    }
+    .closing-note blockquote { max-width:920px; margin:0 auto; color:var(--cocoa); font-family:"Playfair Display",serif; font-size:clamp(34px,5vw,64px); font-style:italic; line-height:1.12; }
     footer { display:flex; justify-content:space-between; gap:20px; padding:28px 5vw; background:#2b1e18; color:#f0e4da; font-size:12px; }
     footer a { color:var(--copper-light); }
     @media (max-width:850px) {
@@ -296,6 +308,10 @@
           <p class="order-note">Minimum bread order: 4 pieces (1 slot). A 50% deposit is required to secure your slot. Revolut payment details will be sent privately after availability is confirmed; the remaining balance is due on collection. Please ask about ingredients and allergens before ordering. Submitting this form is an enquiry and does not automatically confirm an order.</p>
         </form>
       </div>
+    </section>
+
+    <section class="closing-note" aria-label="Raíz Atelier closing thought">
+      <blockquote>“When home is far away, we gather around the table with the family we choose.”</blockquote>
     </section>
   </main>
 
