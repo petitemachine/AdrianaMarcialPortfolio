@@ -71,6 +71,7 @@
     .section-head { display:grid; grid-template-columns:.7fr 1.3fr; gap:30px; margin-bottom:45px; align-items:end; }
     .section-head h2 { margin-bottom:0; font-family:"Playfair Display",serif; font-size:clamp(42px,6vw,82px); letter-spacing:-.04em; line-height:.98; }
     .section-head p { max-width:580px; margin:0; color:var(--muted); font-size:17px; line-height:1.7; }
+    .section-head .eyebrow,.bio .eyebrow { display:inline-block; width:fit-content; margin-bottom:16px; padding:7px 10px; border:1px solid currentColor; border-radius:99px; color:var(--ink); font-size:11px; letter-spacing:.14em; }
     .about-strip { display:grid; grid-template-columns:1.5fr repeat(4,.5fr); gap:1px; padding:0; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
     .about-strip > div,
     .about-strip > a { padding:42px 4vw; background:var(--paper); }
@@ -134,6 +135,7 @@
     .ux-link-action { color:#8f6c00; font-size:13px; font-weight:700; }
     .projects { background:var(--ink); color:#fff; }
     .projects .section-head p { color:#aaa99f; }
+    .projects .section-head .eyebrow { color:var(--gold); }
     .project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
     .project-grid--single { grid-template-columns:minmax(0,1180px); justify-content:center; }
     .project { min-height:500px; display:flex; flex-direction:column; background:#24241f; border:1px solid #393932; overflow:hidden; }
