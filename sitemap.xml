@@ -20,4 +20,19 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://petitemachine.github.io/AdrianaMarcialPortfolio/dentalanxiety.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://petitemachine.github.io/AdrianaMarcialPortfolio/tdah-project.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://petitemachine.github.io/AdrianaMarcialPortfolio/RAIZ_ATELIER/raiz-atelier.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>

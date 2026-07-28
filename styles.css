@@ -189,7 +189,7 @@ h6 {
 	font-size: clamp(80px, 15vw, 230px);
 	color: #1A1916;
 	line-height: 0.92;
-	letter-spacing: -3px;
+	letter-spacing: 4px;
 	margin-bottom: 32px;
 	text-align: center;
 	padding: 0;
@@ -518,6 +518,69 @@ h6 {
 	border-top: 1px solid #f0e8d0;
 }
 
+.portfolio-group-heading {
+	padding: 56px 30px 28px;
+	border-top: 1px solid #e8dfc5;
+	background: #f7f5ef;
+	text-align: center;
+	scroll-margin-top: 24px;
+}
+
+.portfolio-group-heading p {
+	margin: 0 0 8px;
+	padding: 0;
+	color: #707070;
+	font-family: jaf-domus-titling-web, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.portfolio-group-heading h2 {
+	margin: 0 0 10px;
+	padding: 0;
+	color: #1A1916;
+	font-family: 'atocha', serif;
+	font-size: clamp(38px, 6vw, 58px);
+}
+
+.portfolio-group-heading span {
+	color: #707070;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.tdah-card-visual {
+	height: 320px;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(135deg, #E9B940 0%, #f7dc83 100%);
+	color: #1A1916;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: clamp(58px, 10vw, 100px);
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.digital-planning-visual {
+	height: 280px;
+	display: grid;
+	place-items: center;
+	background: #f7f5ef;
+	color: #1A1916;
+	font-size: 64px;
+}
+
+.media-grid--single {
+	grid-template-columns: minmax(0, 480px);
+	justify-content: center;
+}
+
+.marketing-grid {
+	grid-template-columns: minmax(0, 1280px);
+	width: 100%;
+}
+
 .ux-subtitle {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 15px;
@@ -534,6 +597,42 @@ h6 {
 }
 
 .section-image img { width: 100%; max-width: 900px; }
+
+.project-intro {
+	max-width: 680px;
+	margin: 0 auto 24px;
+	padding: 0 16px;
+	line-height: 1.6;
+}
+
+.figma-embed {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	min-height: 360px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	background: #f5f0e8;
+}
+
+.figma-embed iframe {
+	width: 100%;
+	height: 100%;
+	min-height: 360px;
+	border: 0;
+	display: block;
+}
+
+.figma-fallback {
+	margin: 14px 0 0;
+	padding: 0;
+}
+
+.figma-fallback a {
+	color: #1A1916;
+	font-weight: 600;
+}
 
 .step-grid {
 	display: grid;
@@ -620,6 +719,30 @@ h6 {
 	padding: 14px;
 }
 
+.media-card__actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 6px;
+}
+
+.media-card__actions a {
+	padding: 8px 12px;
+	border: 1px solid #1A1916;
+	border-radius: 999px;
+	color: #1A1916;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.media-card__actions a {
+	background: #1A1916;
+	color: #E9B940;
+}
+
 .media-card__label {
 	font-family: jaf-domus-titling-web, sans-serif;
 	font-size: 14px;
@@ -634,6 +757,179 @@ h6 {
 	font-size: 13px;
 	color: #1A1916;
 	text-align: center;
+}
+
+.marketing-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	width: 100%;
+	min-height: 520px;
+}
+
+.marketing-card .media-card__info {
+	order: 1;
+	align-items: flex-start;
+	justify-content: center;
+	padding: clamp(28px, 5vw, 56px);
+}
+
+.marketing-card .media-card__img {
+	order: 2;
+	height: 100%;
+	min-height: 520px;
+	object-fit: contain;
+	background: #f4eadf;
+}
+
+.marketing-card .media-card__label,
+.marketing-card .media-card__sub {
+	text-align: left;
+}
+
+.marketing-card .media-card__actions {
+	justify-content: flex-start;
+}
+
+.campaign-brief {
+	width: min(100%, 720px);
+	margin-top: 10px;
+	padding: 16px 18px;
+	background: rgba(255, 255, 255, 0.48);
+	color: #1A1916;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.55;
+	text-align: left;
+}
+
+.campaign-brief p {
+	margin: 0 0 8px;
+}
+
+.campaign-brief ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.campaign-brief li + li {
+	margin-top: 4px;
+}
+
+.marketing-case-layout {
+	display: grid;
+	grid-template-columns: minmax(320px, 0.8fr) minmax(480px, 1.2fr);
+	gap: 24px;
+	align-items: stretch;
+}
+
+.marketing-step-grid {
+	grid-template-columns: 1fr;
+}
+
+.marketing-case-visual {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 24px 24px;
+	background: #f4eadf;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+	overflow: hidden;
+}
+
+.marketing-image-button {
+	width: calc(100% + 48px);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	cursor: zoom-in;
+}
+
+.marketing-case-visual img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+}
+
+.marketing-case-visual p {
+	margin: 16px 0 12px;
+	color: #1A1916;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+.marketing-case-visual a {
+	padding: 10px 16px;
+	border-radius: 999px;
+	background: #1A1916;
+	color: #E9B940;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.image-dialog {
+	width: min(94vw, 1500px);
+	max-width: none;
+	padding: 0;
+	border: 0;
+	border-radius: 6px;
+	background: #f4eadf;
+	box-shadow: 0 20px 70px rgba(0,0,0,.45);
+}
+
+.image-dialog::backdrop {
+	background: rgba(20,14,11,.86);
+}
+
+.image-dialog img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 90vh;
+	object-fit: contain;
+}
+
+.image-dialog__close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	z-index: 1;
+	width: 42px;
+	height: 42px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: #1A1916;
+	color: #E9B940;
+	font-size: 28px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	.marketing-case-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.marketing-card {
+		grid-template-columns: 1fr;
+	}
+
+	.marketing-card .media-card__info,
+	.marketing-card .media-card__img {
+		order: initial;
+	}
+
+	.marketing-card .media-card__img {
+		min-height: 0;
+		height: auto;
+	}
 }
 
 /* portfolio heading aliases */
