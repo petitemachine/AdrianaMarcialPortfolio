@@ -10,15 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink:#261b16;
-      --cocoa:#5f3527;
-      --terracotta:#b94f32;
-      --maize:#e9b940;
-      --cream:#fff9ed;
-      --paper:#f7eddd;
-      --white:#fff;
-      --muted:#725f55;
-      --line:#ddcbb7;
+      --ink:#35261e;
+      --cocoa:#4a3025;
+      --clay:#7a3f2d;
+      --terracotta:#8d4932;
+      --copper:#a85f38;
+      --copper-light:#e0a77f;
+      --sand:#d4b78f;
+      --olive:#776a49;
+      --cream:#f5eee4;
+      --paper:#e8d9c6;
+      --white:#fffaf4;
+      --muted:#655047;
+      --line:#cbb49b;
       --green:#1a7a40;
     }
     * { box-sizing:border-box; }
@@ -42,7 +46,7 @@
     .brand img { width:100%; height:auto; }
     .nav-links { display:flex; align-items:center; gap:24px; font-size:13px; font-weight:700; }
     .nav-links a { text-decoration:none; }
-    .nav-order { padding:10px 16px; border-radius:999px; background:var(--ink); color:var(--maize); }
+    .nav-order { padding:10px 16px; border-radius:999px; background:var(--cocoa); color:var(--cream); }
     .hero {
       min-height:680px;
       display:grid;
@@ -50,15 +54,15 @@
       background:var(--paper);
     }
     .hero-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(48px,8vw,110px); }
-    .eyebrow { margin:0 0 18px; color:var(--terracotta); font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+    .eyebrow { display:block; margin:0 0 18px; color:var(--clay); font-size:13px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
     h1,h2,h3,p { margin-top:0; }
     h1 { max-width:720px; margin-bottom:24px; font-family:"Playfair Display",serif; font-size:clamp(56px,8vw,106px); line-height:.88; letter-spacing:-.05em; }
-    h1 em { color:var(--terracotta); font-weight:600; }
+    h1 em { color:var(--clay); font-weight:600; }
     .hero-copy > p:not(.eyebrow) { max-width:580px; color:var(--muted); font-size:18px; line-height:1.7; }
     .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
     .button { display:inline-flex; align-items:center; justify-content:center; padding:13px 20px; border:1px solid var(--ink); border-radius:999px; font-size:14px; font-weight:700; text-decoration:none; }
     .button.primary { background:var(--green); border-color:var(--green); color:#fff; }
-    .button.secondary { background:var(--ink); color:var(--maize); }
+    .button.secondary { background:var(--cocoa); color:var(--cream); }
     .hero-image { min-height:560px; height:100%; object-fit:cover; }
     section { padding:90px 6vw; }
     .section-heading { max-width:780px; margin-bottom:44px; }
@@ -90,33 +94,34 @@
     .origin-card h3 { margin-bottom:16px; font-family:"Playfair Display",serif; font-size:clamp(32px,4vw,48px); }
     .origin-card p { color:var(--muted); font-size:16px; line-height:1.8; }
     .origin-quote { margin:40px 0 0; color:var(--cocoa); font-family:"Playfair Display",serif; font-size:clamp(28px,4vw,48px); font-style:italic; text-align:center; }
-    .order { background:var(--ink); color:#fff; }
-    .order .section-heading p { color:#c9b9ad; }
+    .order { background:var(--cocoa); color:var(--cream); }
+    .order .eyebrow { color:var(--copper-light); }
+    .order .section-heading p { color:#eadbcf; }
     .order-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:-12px 0 44px; }
-    .order-step { padding:20px; border:1px solid #5b4940; }
-    .order-step span { display:block; margin-bottom:9px; color:var(--maize); font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    .order-step { padding:20px; border:1px solid #806354; }
+    .order-step span { display:block; margin-bottom:9px; color:var(--copper-light); font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
     .order-step strong { display:block; margin-bottom:7px; font-family:"Playfair Display",serif; font-size:23px; }
-    .order-step p { margin:0; color:#c9b9ad; font-size:13px; line-height:1.55; }
+    .order-step p { margin:0; color:#eadbcf; font-size:13px; line-height:1.55; }
     .order-layout { display:grid; grid-template-columns:.8fr 1.2fr; gap:55px; align-items:start; }
     .channels { display:grid; gap:14px; }
-    .channel { display:block; padding:20px; border:1px solid #5b4940; text-decoration:none; }
-    .channel strong { display:block; margin-bottom:5px; color:var(--maize); }
-    .channel span { color:#c9b9ad; font-size:14px; }
+    .channel { display:block; padding:20px; border:1px solid #806354; text-decoration:none; }
+    .channel strong { display:block; margin-bottom:5px; color:var(--copper-light); }
+    .channel span { color:#eadbcf; font-size:14px; }
     .channel.disabled { opacity:.7; }
-    form { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:28px; background:#33251f; }
+    form { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:28px; background:#5a3c30; }
     label { display:block; margin-bottom:7px; color:#eee4dc; font-size:13px; font-weight:700; }
-    input,select,textarea { width:100%; padding:13px; border:1px solid #70594e; border-radius:4px; background:#fff; color:var(--ink); font:inherit; }
+    input,select,textarea { width:100%; padding:13px; border:1px solid #89695a; border-radius:4px; background:var(--white); color:var(--ink); font:inherit; }
     textarea { min-height:130px; resize:vertical; }
     .field-wide { grid-column:1/-1; }
-    .flavour-picker { grid-column:1/-1; padding:18px; border:1px solid #70594e; }
+    .flavour-picker { grid-column:1/-1; padding:18px; border:1px solid #89695a; }
     .flavour-picker[hidden] { display:none; }
     .flavour-picker legend { padding:0 7px; color:#eee4dc; font-size:13px; font-weight:700; }
-    .flavour-picker > p { margin:0 0 14px; color:#c9b9ad; font-size:12px; line-height:1.5; }
+    .flavour-picker > p { margin:0 0 14px; color:#eadbcf; font-size:12px; line-height:1.5; }
     .flavour-quantities { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
-    button { width:100%; padding:14px 20px; border:0; border-radius:999px; background:var(--maize); color:var(--ink); font:700 14px "DM Sans",sans-serif; cursor:pointer; }
-    .order-note { grid-column:1/-1; margin:0; color:#c9b9ad; font-size:12px; line-height:1.6; }
-    footer { display:flex; justify-content:space-between; gap:20px; padding:28px 5vw; background:#160f0c; color:#e9ddd6; font-size:12px; }
-    footer a { color:var(--maize); }
+    button { width:100%; padding:14px 20px; border:0; border-radius:999px; background:var(--copper-light); color:var(--ink); font:700 14px "DM Sans",sans-serif; cursor:pointer; }
+    .order-note { grid-column:1/-1; margin:0; color:#eadbcf; font-size:12px; line-height:1.6; }
+    footer { display:flex; justify-content:space-between; gap:20px; padding:28px 5vw; background:#2b1e18; color:#f0e4da; font-size:12px; }
+    footer a { color:var(--copper-light); }
     @media (max-width:850px) {
       .hero,.story,.origin-grid,.order-layout { grid-template-columns:1fr; }
       .order-steps { grid-template-columns:1fr 1fr; }
@@ -137,7 +142,7 @@
 <body>
   <nav class="site-nav" aria-label="Raíz Atelier navigation">
     <a class="brand" href="#home" aria-label="Raíz Atelier home">
-      <img src="images/Logo_Raiz_Atelier_Wordmark.png" alt="Raíz Atelier">
+      <img src="images/Logo_Raiz_Atelier_Wordmark.png" alt="">
     </a>
     <div class="nav-links">
       <a href="#menu">Menu</a>
@@ -149,7 +154,7 @@
   <main>
     <header class="hero" id="home">
       <div class="hero-copy">
-        <p class="eyebrow">Mexican bakery · Small-batch baking</p>
+        <span class="eyebrow">Mexican bakery · Small-batch baking</span>
         <h1>A little piece of <em>Mexico</em>, baked with care.</h1>
         <p>Small-batch Mexican breads inspired by tradition and memory. Ask about this week’s availability or send us your seasonal-bread enquiry.</p>
         <div class="hero-actions">
@@ -162,7 +167,7 @@
 
     <section class="menu" id="menu">
       <div class="section-heading">
-        <p class="eyebrow">Menu preview</p>
+        <span class="eyebrow">Menu preview</span>
         <h2>Made for sharing—or keeping to yourself.</h2>
         <p>Availability changes with each bake. Pan de Muerto and Rosca de Reyes are seasonal; contact us before ordering to confirm products, quantities and collection details.</p>
         <div class="availability-note">
@@ -201,7 +206,7 @@
     <section class="story" id="story">
       <img src="images/pan_de_muerto.jpg?v=2" alt="Mexican pan de muerto">
       <div>
-        <p class="eyebrow">The idea behind Raíz</p>
+        <span class="eyebrow">The idea behind Raíz</span>
         <h2>Tradition, memory and creativity at the table.</h2>
         <p>Raíz means “root”. The project celebrates the flavours and visual language of Mexican baking while creating warm, memorable experiences around food.</p>
         <p>Every product is made to create a warm, memorable experience around Mexican flavours, tradition and time shared at the table.</p>
@@ -210,18 +215,18 @@
 
     <section class="origin-purpose" aria-labelledby="origin-title">
       <div class="section-heading">
-        <p class="eyebrow">Our roots</p>
+        <span class="eyebrow">Our roots</span>
         <h2 id="origin-title">How Raíz Atelier began.</h2>
         <p>Raíz grew from a desire to keep the flavours, rituals and memories of Mexican baking close—even while living far from home.</p>
       </div>
       <div class="origin-grid">
         <article class="origin-card">
-          <p class="eyebrow">How it began</p>
+          <span class="eyebrow">How it began</span>
           <h3>A connection to home.</h3>
           <p>Inspired by Adriana’s Mexican roots and the food traditions of Oaxaca, Raíz Atelier began as a personal exploration of breads that carry memory. Each bake became a way to reconnect with familiar flavours and share part of that cultural story with others.</p>
         </article>
         <article class="origin-card">
-          <p class="eyebrow">Our purpose</p>
+          <span class="eyebrow">Our purpose</span>
           <h3>Tradition made shareable.</h3>
           <p>The purpose of Raíz is to celebrate Mexican baking through thoughtfully developed products, careful presentation and warm customer experiences. It brings together time, craft and storytelling—from the recipe and packaging to the digital ordering journey.</p>
         </article>
@@ -231,7 +236,7 @@
 
     <section class="order" id="order">
       <div class="section-heading">
-        <p class="eyebrow">Orders &amp; enquiries</p>
+        <span class="eyebrow">Orders &amp; enquiries</span>
         <h2>What would you like us to bake?</h2>
         <p>Each weekly bake offers 6 slots of 4 breads, allocated on a first-come, first-served basis. Send an enquiry through your preferred channel; your slot is only confirmed after availability and collection details have been agreed and the 50% deposit has been received.</p>
       </div>
