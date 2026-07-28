@@ -139,6 +139,7 @@
     .project { min-height:500px; display:flex; flex-direction:column; background:#24241f; border:1px solid #393932; overflow:hidden; }
     .project img { height:330px; object-fit:cover; }
     .project img.raiz-project-image { object-fit:contain; background:#f4eadf; }
+    .raiz-image-button { width:100%; height:100%; display:block; padding:0; margin:0; border:0; background:transparent; cursor:zoom-in; overflow:hidden; }
     .tooth-symbol { height:330px; display:grid; place-items:center; background:linear-gradient(135deg,#f7f5ef 0%,#eee5c8 100%); font-size:112px; line-height:1; }
     .tdah-symbol {
       height:330px;
@@ -153,7 +154,11 @@
     }
     .project-copy { padding:26px; }
     .project--featured { display:grid; grid-template-columns:minmax(360px,1fr) minmax(360px,1fr); min-height:560px; }
-    .project--featured img.raiz-project-image { width:100%; height:100%; min-height:560px; }
+    .project--featured .raiz-image-button img.raiz-project-image { width:100%; height:100%; min-height:560px; }
+    .image-dialog { width:min(94vw, 1500px); max-width:none; padding:0; border:0; border-radius:6px; background:#f4eadf; box-shadow:0 24px 70px rgba(0,0,0,.55); }
+    .image-dialog::backdrop { background:rgba(20,14,11,.86); }
+    .image-dialog img { display:block; width:100%; height:auto; max-height:90vh; object-fit:contain; }
+    .image-dialog__close { position:absolute; top:12px; right:12px; z-index:1; width:42px; height:42px; border:0; border-radius:50%; background:#1f1f1b; color:#fff; font-size:28px; line-height:1; cursor:pointer; }
     .project--featured .project-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(30px,5vw,58px); }
     .project-points { margin:4px 0 22px; padding-left:20px; color:#aaa99f; line-height:1.6; }
     .project-points li + li { margin-top:7px; }
@@ -209,7 +214,7 @@
       .project-grid { grid-template-columns:1fr; }
       .ux-link-grid { grid-template-columns:1fr; }
       .project--featured { grid-template-columns:1fr; }
-      .project--featured img.raiz-project-image { min-height:0; height:auto; }
+      .project--featured .raiz-image-button img.raiz-project-image { min-height:0; height:auto; }
       .related-case { align-items:flex-start; flex-direction:column; }
       .figma-embed { min-height:480px; }
       .creative-item:nth-child(n) { grid-column:span 12; height:340px; }
@@ -320,7 +325,9 @@
       </div>
       <div class="project-grid project-grid--single">
         <article class="project project--featured">
-          <img class="raiz-project-image" src="RAIZ_ATELIER/images/product Design Raiz atelier.png" alt="Raíz Atelier product design, packaging and brand identity presentation">
+            <button class="raiz-image-button" type="button" aria-label="Enlarge Raíz Atelier brand presentation" data-open-image="raiz-image-dialog">
+              <img class="raiz-project-image" src="RAIZ_ATELIER/images/product Design Raiz atelier.png" alt="Raíz Atelier product design, packaging and brand identity presentation">
+            </button>
           <div class="project-copy">
             <span class="project-number">PRODUCT DESIGN &amp; DIGITAL MARKETING</span>
             <h3>Raíz Atelier Mexican Bakery</h3>
@@ -402,9 +409,25 @@
       <a class="button primary" href="contactme.html">Say hi! Let’s talk →</a>
     </section>
   </main>
+
+  <dialog class="image-dialog" id="raiz-image-dialog" aria-label="Raíz Atelier brand presentation enlarged">
+    <button class="image-dialog__close" type="button" aria-label="Close enlarged image">&times;</button>
+    <img src="RAIZ_ATELIER/images/product Design Raiz atelier.png" alt="Raíz Atelier product design, packaging and brand identity presentation enlarged">
+  </dialog>
   <footer>
     <span>© 2026 Adriana Marcial</span>
     <span><a href="https://www.linkedin.com/in/adrianamarcial" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://www.instagram.com/petitemachineux/" target="_blank" rel="noopener noreferrer">Instagram</a> · Dublin, Ireland</span>
   </footer>
+  <script>
+    const raizImageDialog = document.getElementById('raiz-image-dialog');
+    const raizImageButton = document.querySelector('[data-open-image="raiz-image-dialog"]');
+    const raizImageClose = raizImageDialog.querySelector('.image-dialog__close');
+
+    raizImageButton.addEventListener('click', () => raizImageDialog.showModal());
+    raizImageClose.addEventListener('click', () => raizImageDialog.close());
+    raizImageDialog.addEventListener('click', (event) => {
+      if (event.target === raizImageDialog) raizImageDialog.close();
+    });
+  </script>
 </body>
 </html>
