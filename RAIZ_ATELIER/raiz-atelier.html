@@ -147,6 +147,8 @@
     .closing-note blockquote { max-width:920px; margin:0 auto; color:var(--cocoa); font-family:"Playfair Display",serif; font-size:clamp(34px,5vw,64px); font-style:italic; line-height:1.12; }
     footer { display:flex; justify-content:space-between; gap:20px; padding:28px 5vw; background:#2b1e18; color:#f0e4da; font-size:12px; }
     footer a { color:var(--copper-light); }
+    .instagram-footer { display:inline-flex; align-items:center; gap:6px; }
+    .instagram-footer svg { width:17px; height:17px; fill:var(--cream); }
     @media (max-width:850px) {
       .hero,.story,.origin-grid,.order-layout { grid-template-columns:1fr; }
       .order-steps { grid-template-columns:1fr 1fr; }
@@ -317,7 +319,7 @@
 
   <footer>
     <span>© 2026 Raíz Atelier Mexican Bakery</span>
-    <span><a href="../index.html#digital-work">Created by Adriana Marcial</a> · <a href="https://www.instagram.com/petitemachineux/" target="_blank" rel="noopener noreferrer">Instagram</a></span>
+    <span><a href="../index.html#digital-work">Created by Adriana Marcial</a> · <a class="instagram-footer" href="https://www.instagram.com/petitemachineux/" target="_blank" rel="noopener noreferrer" aria-label="Raíz Atelier on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.81 5.81 0 0 1 22 7.8v8.4a5.81 5.81 0 0 1-5.8 5.8H7.8A5.81 5.81 0 0 1 2 16.2V7.8A5.81 5.81 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg><span>Instagram</span></a></span>
   </footer>
   <script>
     const orderForm = document.getElementById("order-form");
