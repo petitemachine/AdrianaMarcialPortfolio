@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adriana Marcial | UX Designer &amp; Digital Marketing Specialist | Dublin</title>
-  <meta name="description" content="Portfolio of Adriana Marcial, a bilingual UX designer and digital marketing specialist based in Dublin. Explore UX research, UI design, campaigns and creative work.">
+  <meta name="description" content="Portfolio of Adriana Marcial, a bilingual UX designer and digital marketing specialist based in Dublin. Explore UX research, UI design, applied marketing and creative work.">
   <meta name="author" content="Adriana Marcial">
   <meta property="og:title" content="Adriana Marcial | UX Design &amp; Digital Marketing Portfolio">
   <meta property="og:description" content="UX research, interface design, digital marketing and creative projects by Adriana Marcial in Dublin.">
@@ -127,7 +127,7 @@
     .projects { background:var(--ink); color:#fff; }
     .projects .section-head p { color:#aaa99f; }
     .project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
-    .project-grid--single { grid-template-columns:minmax(0,720px); justify-content:center; }
+    .project-grid--single { grid-template-columns:minmax(0,1180px); justify-content:center; }
     .project { min-height:500px; display:flex; flex-direction:column; background:#24241f; border:1px solid #393932; overflow:hidden; }
     .project img { height:330px; object-fit:cover; }
     .project img.raiz-project-image { object-fit:contain; background:#f4eadf; }
@@ -144,6 +144,11 @@
       letter-spacing:.02em;
     }
     .project-copy { padding:26px; }
+    .project--featured { display:grid; grid-template-columns:minmax(360px,1fr) minmax(360px,1fr); min-height:560px; }
+    .project--featured img.raiz-project-image { width:100%; height:100%; min-height:560px; }
+    .project--featured .project-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(30px,5vw,58px); }
+    .project-points { margin:4px 0 22px; padding-left:20px; color:#aaa99f; line-height:1.6; }
+    .project-points li + li { margin-top:7px; }
     .project-number { color:var(--gold); font-size:12px; font-weight:700; letter-spacing:.16em; }
     .project h3 { margin:8px 0 12px; font-family:"Playfair Display",serif; font-size:34px; }
     .project p { color:#aaa99f; line-height:1.6; }
@@ -189,6 +194,8 @@
       .about-strip { grid-template-columns:1fr 1fr; }
       .about-strip > div:first-child { grid-column:1/-1; }
       .project-grid { grid-template-columns:1fr; }
+      .project--featured { grid-template-columns:1fr; }
+      .project--featured img.raiz-project-image { min-height:0; height:auto; }
       .related-case { align-items:flex-start; flex-direction:column; }
       .figma-embed { min-height:480px; }
       .creative-item:nth-child(n) { grid-column:span 12; height:340px; }
@@ -231,7 +238,7 @@
     <section class="about-strip" aria-label="Profile summary">
       <div><strong>Design with empathy,<br>communicate with purpose.</strong><p>A bilingual creative professional connecting UX thinking with digital marketing.</p></div>
       <a href="#ux-ui-work" aria-label="Go to UX and UI projects"><strong>UX / UI</strong><span>Research<br>Prototyping<br>Interface Design</span></a>
-      <a href="#digital-work" aria-label="Go to the digital marketing project"><strong>Digital</strong><span>Content<br>Campaigns<br>SEO</span></a>
+      <a href="#digital-work" aria-label="Go to the applied digital marketing project"><strong>Marketing</strong><span>Applied Strategy<br>Content<br>SEO</span></a>
       <a href="#creative-work" aria-label="Go to creative media and photography"><strong>Creative</strong><span>Multimedia<br>Animation<br>Video</span></a>
       <a href="#about-me" aria-label="Go to Adriana's bilingual profile"><strong>EN / ES</strong><span>Bilingual<br>Multicultural<br>Dublin-based</span></a>
     </section>
@@ -283,13 +290,24 @@
 
     <section class="projects" id="digital-work">
       <div class="section-head">
-        <div><p class="eyebrow">Digital marketing</p><h2>Marketing campaign.</h2></div>
-        <p>Audience insight, clear messaging, branding and campaign design.</p>
+        <div><p class="eyebrow">Applied digital marketing</p><h2>Brand strategy in practice.</h2></div>
+        <p>A self-initiated project applying audience insight, visual identity, content planning and a practical digital customer journey.</p>
       </div>
       <div class="project-grid project-grid--single">
-        <article class="project">
+        <article class="project project--featured">
           <img class="raiz-project-image" src="RAIZ_ATELIER/images/product Design Raiz atelier.png" alt="Raíz Atelier product design, packaging and brand identity presentation">
-          <div class="project-copy"><span class="project-number">01 · PRODUCT DESIGN &amp; DIGITAL MARKETING</span><h3>Raíz Atelier Mexican Bakery</h3><p>A small-batch Mexican bakery concept created to build local awareness in Dublin through brand strategy, cultural storytelling and a focused digital ordering journey. Its warm terracotta, cocoa, maize and cream palette references clay, chocolate, bread and everyday Mexican life, while communicating an artisanal promise of freshness, quality and care.</p><a href="RAIZ_ATELIER/raiz-atelier.html">Visit Landing Page →</a></div>
+          <div class="project-copy">
+            <span class="project-number">01 · PRODUCT DESIGN &amp; APPLIED DIGITAL MARKETING</span>
+            <h3>Raíz Atelier Mexican Bakery</h3>
+            <p>A small-batch Mexican bakery concept created to build local awareness in Dublin through brand strategy, cultural storytelling and a focused digital ordering journey.</p>
+            <p>Its terracotta, cocoa, maize and warm cream palette references clay cookware, chocolate, bread and everyday Mexican life. The identity communicates warmth, nostalgia and an artisanal promise: bread made with care, protected freshness and attention to quality rather than mass production.</p>
+            <ul class="project-points">
+              <li>Define a culturally rooted brand story and visual direction.</li>
+              <li>Communicate weekly availability, seasonal products and limited batches clearly.</li>
+              <li>Connect discovery to enquiries through the landing page, WhatsApp and social media.</li>
+            </ul>
+            <a href="RAIZ_ATELIER/raiz-atelier.html">Visit Landing Page →</a>
+          </div>
         </article>
       </div>
     </section>
