@@ -56,7 +56,7 @@
     .nav-links { display:flex; gap:28px; font-size:13px; font-weight:600; }
     .nav-links a { text-decoration:none; }
     .hero { min-height:82vh; display:grid; grid-template-columns:1.35fr .65fr; gap:7vw; align-items:center; padding:70px 7vw; background:var(--white); }
-    .eyebrow { margin:0 0 18px; color:var(--muted); font-size:12px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; }
+    .eyebrow { display:block; margin:0 0 18px; color:var(--muted); font-size:12px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; }
     h1,h2,h3,p { margin-top:0; }
     h1 { margin-bottom:25px; font-family:"Playfair Display",serif; font-size:clamp(60px,9vw,132px); font-weight:600; letter-spacing:-.07em; line-height:.82; }
     h1 em { display:inline-block; padding:0 .12em .05em; border-radius:.04em; background:var(--ink); color:var(--gold); font-weight:600; }
@@ -96,7 +96,7 @@
       outline:2px solid var(--gold);
       outline-offset:-2px;
     }
-    .about-strip-title { display:block; margin-bottom:8px; font-family:"Playfair Display",serif; font-size:34px; font-weight:700; }
+    .about-strip strong { display:block; margin-bottom:8px; font-family:"Playfair Display",serif; font-size:34px; }
     .about-strip span,.about-strip p { color:var(--muted); line-height:1.6; }
     .case { background:var(--gold); }
     .case-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:55px; align-items:center; }
@@ -263,10 +263,10 @@
 
     <section class="about-strip" aria-label="Profile summary">
       <div><strong>Design with empathy,<br>communicate with purpose.</strong><p>A bilingual creative professional connecting UX thinking with digital marketing.</p></div>
-      <a href="#ux-ui-work" aria-label="Go to UX and UI projects"><span class="about-strip-title">UX / UI</span><span>Research<br>Prototyping<br>Interface Design</span></a>
-      <a href="#digital-work" aria-label="Go to the applied digital marketing project"><span class="about-strip-title">Marketing</span><span>Applied Strategy<br>Content<br>SEO</span></a>
-      <a href="#creative-work" aria-label="Go to creative media and photography"><span class="about-strip-title">Creative</span><span>Multimedia<br>Animation<br>Video</span></a>
-      <a href="#about-me" aria-label="Go to Adriana's bilingual profile"><span class="about-strip-title">EN / ES</span><span>Bilingual<br>Multicultural<br>Dublin-based</span></a>
+      <a href="#ux-ui-work" aria-label="Go to UX and UI projects"><strong>UX / UI</strong><span>Research<br>Prototyping<br>Interface Design</span></a>
+      <a href="#digital-work" aria-label="Go to the applied digital marketing project"><strong>Marketing</strong><span>Applied Strategy<br>Content<br>SEO</span></a>
+      <a href="#creative-work" aria-label="Go to creative media and photography"><strong>Creative</strong><span>Multimedia<br>Animation<br>Video</span></a>
+      <a href="#about-me" aria-label="Go to Adriana's bilingual profile"><strong>EN / ES</strong><span>Bilingual<br>Multicultural<br>Dublin-based</span></a>
     </section>
 
     <section class="case" id="ux-ui-work">
@@ -288,7 +288,7 @@
 
     <section class="ux-project-links" aria-labelledby="more-ux-title">
       <div class="section-head">
-        <div><p class="eyebrow">More UX work</p><h2 id="more-ux-title">Explore the objective.</h2></div>
+        <div><span class="eyebrow">More UX work</span><h2 id="more-ux-title">Explore the objective.</h2></div>
         <p>Open each project to understand the problem it addresses and the direction of the proposed experience.</p>
       </div>
       <div class="ux-link-grid">
@@ -327,7 +327,7 @@
 
     <section class="projects" id="digital-work">
       <div class="section-head">
-        <div><p class="eyebrow">Digital marketing</p><h2>Brand strategy in practice.</h2></div>
+        <div><span class="eyebrow">Digital marketing</span><h2>Brand strategy in practice.</h2></div>
         <p>A self-initiated project applying audience insight, visual identity, content planning and a practical digital customer journey.</p>
       </div>
       <div class="project-grid project-grid--single">
@@ -368,7 +368,7 @@
 
     <section id="creative-work">
       <div class="section-head">
-        <div><p class="eyebrow">Creative media, making &amp; photography</p><h2>Creativity across mediums.</h2></div>
+        <div><span class="eyebrow">Creative media, making &amp; photography</span><h2>Creativity across mediums.</h2></div>
         <p>Academic multimedia, graphic design, hands-on making and selected photography show creativity, patience and attention to detail beyond the screen.</p>
       </div>
       <div class="creative-grid">
@@ -401,7 +401,7 @@
     <section class="bio" id="about-me">
       <img class="bio-photo" src="images/adriana_about.jpg" alt="Adriana Marcial">
       <div>
-        <p class="eyebrow">About me</p>
+        <span class="eyebrow">About me</span>
         <h2>Curious by nature. Human-centred by design.</h2>
         <p>My path from Mexico to Canada and Ireland has shaped the way I observe, communicate and design. With a background in marketing and growing expertise in UX, I approach digital experiences with empathy, cultural awareness and a practical understanding of audiences.</p>
         <p>I’m currently deepening my skills in digital marketing, SEO and web development while building work that connects research, storytelling and thoughtful visual design.</p>
