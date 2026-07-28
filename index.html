@@ -71,7 +71,7 @@
     .section-head { display:grid; grid-template-columns:.7fr 1.3fr; gap:30px; margin-bottom:45px; align-items:end; }
     .section-head h2 { margin-bottom:0; font-family:"Playfair Display",serif; font-size:clamp(40px,5vw,68px); letter-spacing:-.04em; line-height:.98; }
     .section-head p { max-width:580px; margin:0; color:var(--muted); font-size:17px; line-height:1.7; }
-    .section-head p.section-subtitle { margin-top:14px; color:var(--ink); font-family:"Playfair Display",serif; font-size:clamp(26px,3.2vw,42px); line-height:1.08; }
+    .section-head h3.section-subtitle { margin:14px 0 0; color:var(--ink); font-family:"Playfair Display",serif; font-size:clamp(25px,3vw,40px); font-weight:600; line-height:1.08; }
     .about-strip { display:grid; grid-template-columns:1.5fr repeat(4,.5fr); gap:1px; padding:0; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
     .about-strip > div,
     .about-strip > a { padding:42px 4vw; background:var(--paper); }
@@ -135,7 +135,7 @@
     .ux-link-action { color:#8f6c00; font-size:13px; font-weight:700; }
     .projects { background:var(--ink); color:#fff; }
     .projects .section-head p { color:#aaa99f; }
-    .projects .section-head p.section-subtitle { color:#fff; }
+    .projects .section-head h3.section-subtitle { color:#fff; }
     .project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
     .project-grid--single { grid-template-columns:minmax(0,1180px); justify-content:center; }
     .project { min-height:500px; display:flex; flex-direction:column; background:#24241f; border:1px solid #393932; overflow:hidden; }
@@ -199,7 +199,7 @@
     .bio-photo { position:sticky; top:110px; aspect-ratio:4/5; object-fit:cover; }
     .bio h2 { font-family:"Playfair Display",serif; font-size:clamp(44px,5vw,68px); line-height:1; }
     .bio p { color:var(--muted); font-size:17px; line-height:1.8; }
-    .bio p.bio-tagline { margin-bottom:24px; color:var(--ink); font-family:"Playfair Display",serif; font-size:clamp(30px,4vw,50px); line-height:1.08; }
+    .bio h3.bio-tagline { margin:0 0 24px; color:var(--ink); font-family:"Playfair Display",serif; font-size:clamp(28px,3.8vw,46px); font-weight:600; line-height:1.08; }
     .skills { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
     .skills span { padding:8px 12px; border:1px solid var(--line); border-radius:999px; font-size:12px; }
     .contact { text-align:center; background:var(--gold); }
@@ -289,7 +289,7 @@
 
     <section class="ux-project-links" aria-labelledby="more-ux-title">
       <div class="section-head">
-        <div><h2 id="more-ux-title">More UX work</h2><p class="section-subtitle">Explore the objective.</p></div>
+        <div><h2 id="more-ux-title">More UX work</h2><h3 class="section-subtitle">Explore the objective.</h3></div>
         <p>Open each project to understand the problem it addresses and the direction of the proposed experience.</p>
       </div>
       <div class="ux-link-grid">
@@ -328,7 +328,7 @@
 
     <section class="projects" id="digital-work">
       <div class="section-head">
-        <div><h2>Digital marketing</h2><p class="section-subtitle">Brand strategy in practice.</p></div>
+        <div><h2>Digital marketing</h2><h3 class="section-subtitle">Brand strategy in practice.</h3></div>
         <p>A self-initiated project applying audience insight, visual identity, content planning and a practical digital customer journey.</p>
       </div>
       <div class="project-grid project-grid--single">
@@ -369,7 +369,7 @@
 
     <section id="creative-work">
       <div class="section-head">
-        <div><h2>Creative media, making &amp; photography</h2><p class="section-subtitle">Creativity across mediums.</p></div>
+        <div><h2>Creative media, making &amp; photography</h2><h3 class="section-subtitle">Creativity across mediums.</h3></div>
         <p>Academic multimedia, graphic design, hands-on making and selected photography show creativity, patience and attention to detail beyond the screen.</p>
       </div>
       <div class="creative-grid">
@@ -403,7 +403,7 @@
       <img class="bio-photo" src="images/adriana_about.jpg" alt="Adriana Marcial">
       <div>
         <h2>About me</h2>
-        <p class="bio-tagline">Curious by nature. Human-centred by design.</p>
+        <h3 class="bio-tagline">Curious by nature. Human-centred by design.</h3>
         <p>My path from Mexico to Canada and Ireland has shaped the way I observe, communicate and design. With a background in marketing and growing expertise in UX, I approach digital experiences with empathy, cultural awareness and a practical understanding of audiences.</p>
         <p>I’m currently deepening my skills in digital marketing, SEO and web development while building work that connects research, storytelling and thoughtful visual design.</p>
         <div class="skills"><span>UX Research</span><span>UI Design</span><span>Digital Marketing</span><span>Content</span><span>SEO</span><span>English / Spanish</span></div>
