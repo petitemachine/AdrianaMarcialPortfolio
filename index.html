@@ -124,6 +124,14 @@
     .related-case h3 { margin:5px 0; font-family:"Playfair Display",serif; font-size:28px; }
     .related-case p { margin:0; color:#aaa99f; }
     .related-case a { flex-shrink:0; color:var(--gold); font-weight:700; text-decoration:none; }
+    .ux-project-links { background:#f1eee5; }
+    .ux-link-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .ux-link-card { display:grid; grid-template-columns:auto 1fr; gap:18px; padding:28px; border:1px solid var(--line); background:var(--white); text-decoration:none; transition:transform .2s ease, box-shadow .2s ease; }
+    .ux-link-card:hover,.ux-link-card:focus-visible { transform:translateY(-4px); box-shadow:0 16px 36px rgba(23,23,19,.1); outline:2px solid var(--gold); }
+    .ux-link-emoji { font-size:42px; line-height:1; }
+    .ux-link-card h3 { margin:5px 0 10px; font-family:"Playfair Display",serif; font-size:32px; }
+    .ux-link-card p { margin:0 0 16px; color:var(--muted); line-height:1.6; }
+    .ux-link-action { color:#8f6c00; font-size:13px; font-weight:700; }
     .projects { background:var(--ink); color:#fff; }
     .projects .section-head p { color:#aaa99f; }
     .project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
@@ -194,6 +202,7 @@
       .about-strip { grid-template-columns:1fr 1fr; }
       .about-strip > div:first-child { grid-column:1/-1; }
       .project-grid { grid-template-columns:1fr; }
+      .ux-link-grid { grid-template-columns:1fr; }
       .project--featured { grid-template-columns:1fr; }
       .project--featured img.raiz-project-image { min-height:0; height:auto; }
       .related-case { align-items:flex-start; flex-direction:column; }
@@ -260,6 +269,33 @@
       </div>
     </section>
 
+    <section class="ux-project-links" aria-labelledby="more-ux-title">
+      <div class="section-head">
+        <div><p class="eyebrow">More UX work</p><h2 id="more-ux-title">Explore the objective.</h2></div>
+        <p>Open each project to understand the problem it addresses and the direction of the proposed experience.</p>
+      </div>
+      <div class="ux-link-grid">
+        <a class="ux-link-card" href="dentalanxiety.html">
+          <span class="ux-link-emoji" aria-hidden="true">🦷</span>
+          <span>
+            <span class="eyebrow">UX case study</span>
+            <h3>Dental Anxiety App</h3>
+            <p><strong>Objective:</strong> Reduce uncertainty and help patients feel informed, prepared and more in control before a dental appointment.</p>
+            <span class="ux-link-action">Open the case study →</span>
+          </span>
+        </a>
+        <a class="ux-link-card" href="tdah-project.html">
+          <span class="ux-link-emoji" aria-hidden="true">🧠</span>
+          <span>
+            <span class="eyebrow">UX project · Work in progress</span>
+            <h3>TDAH / ADHD Project</h3>
+            <p><strong>Objective:</strong> Explore a clearer, low-friction digital structure that supports attention, planning and reduced cognitive overload.</p>
+            <span class="ux-link-action">Open the project →</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
     <section class="ui-showcase">
       <div class="ui-grid">
         <div class="ui-copy">
@@ -269,22 +305,6 @@
           <p><strong>Interactive Figma prototype:</strong> explore the interface directly here.</p>
         </div>
         <iframe class="figma-embed" title="Interactive Figma prototype for a communication platform" src="https://embed.figma.com/design/0dMscpJgOU7gubOoF7bgJV/Practice--Chat-App-Homepage-Design--Copy-?node-id=107-17&amp;embed-host=share" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="related-case">
-        <div>
-          <p class="eyebrow">Related UX / UI case study</p>
-          <h3>Dental Anxiety App</h3>
-          <p>Research-led concepts designed to help patients feel informed, prepared and more in control.</p>
-        </div>
-        <a href="dentalanxiety.html">View case study →</a>
-      </div>
-      <div class="related-case">
-        <div>
-          <p class="eyebrow">UX / UI project in development</p>
-          <h3>TDAH / ADHD Project</h3>
-          <p>Research and interface exploration focused on making a supportive digital experience clearer and easier to use.</p>
-        </div>
-        <a href="tdah-project.html">Work in progress →</a>
       </div>
     </section>
 
