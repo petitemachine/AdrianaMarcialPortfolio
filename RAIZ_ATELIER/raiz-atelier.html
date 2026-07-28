@@ -67,6 +67,18 @@
     section { padding:90px 6vw; }
     .section-heading { max-width:780px; margin-bottom:44px; }
     .section-heading h2 { margin-bottom:14px; font-family:"Playfair Display",serif; font-size:clamp(42px,6vw,72px); line-height:1; }
+    .section-heading h2,.story h2 { position:relative; padding-left:42px; }
+    .section-heading h2::before,.story h2::before {
+      content:"";
+      position:absolute;
+      left:0;
+      top:.08em;
+      width:25px;
+      height:42px;
+      background:var(--copper);
+      -webkit-mask:url("images/espiga.svg") center/contain no-repeat;
+      mask:url("images/espiga.svg") center/contain no-repeat;
+    }
     .section-heading p { color:var(--muted); font-size:17px; line-height:1.7; }
     .availability-note { display:flex; align-items:center; gap:14px; margin-top:8px; }
     .availability-note img { width:24px; height:40px; object-fit:contain; flex:0 0 auto; }
@@ -96,6 +108,7 @@
     .origin-quote { margin:40px 0 0; color:var(--cocoa); font-family:"Playfair Display",serif; font-size:clamp(28px,4vw,48px); font-style:italic; text-align:center; }
     .order { background:var(--cocoa); color:var(--cream); }
     .order .eyebrow { color:var(--copper-light); }
+    .order .section-heading h2::before { background:var(--copper-light); }
     .order .section-heading p { color:#eadbcf; }
     .order-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:-12px 0 44px; }
     .order-step { padding:20px; border:1px solid #806354; }
