@@ -212,6 +212,7 @@
     .photo-card img { width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
     .photo-card:hover img { transform:scale(1.025); }
     .photo-card figcaption { position:absolute; left:12px; bottom:12px; padding:8px 11px; background:rgba(23,23,19,.84); color:#fff; font-size:11px; letter-spacing:.05em; }
+    .photo-grid--personal .photo-card:nth-child(n) { grid-column:span 2; min-height:390px; }
     .photo-grid--diana { grid-template-columns:repeat(2,1fr); }
     .photo-grid--diana .photo-card { grid-column:auto; min-height:520px; }
     .bio { display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; align-items:start; background:var(--white); }
@@ -427,9 +428,7 @@
 
       <div class="photo-collection">
         <div class="photo-heading"><h3>Personal Photography</h3><p><span class="photo-equipment">Nikon D7100</span><br>Images made for curiosity and enjoyment—observing colour, place, nature and everyday visual details.</p></div>
-        <div class="photo-grid">
-          <figure class="photo-card"><img src="images/lomography_yellowflower_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Yellow Flower</figcaption></figure>
-          <figure class="photo-card"><img src="images/maple_leaves_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Maple Leaves</figcaption></figure>
+        <div class="photo-grid photo-grid--personal">
           <figure class="photo-card"><img src="images/joshuathree.jpg" alt="" width="1086" height="724" loading="lazy" decoding="async"><figcaption>Joshua Tree</figcaption></figure>
           <figure class="photo-card"><img src="images/berlin_bluetubes_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Berlin Blue Tubes</figcaption></figure>
           <figure class="photo-card"><img src="images/Classic_German_car_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Classic German Car</figcaption></figure>
@@ -437,8 +436,10 @@
       </div>
 
       <div class="photo-collection">
-        <div class="photo-heading"><h3>Diana+ Lomography</h3><p><span class="photo-equipment">35 mm lens</span><br>A playful analogue exploration of flowers, unexpected colour and the beautiful imperfections of the Diana+ camera.</p></div>
+        <div class="photo-heading"><h3>Diana+ Lomography</h3><p>A playful analogue exploration of flowers, unexpected colour and the beautiful imperfections of the Diana+ camera.</p></div>
         <div class="photo-grid photo-grid--diana">
+          <figure class="photo-card"><img src="images/lomography_yellowflower_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Yellow Flower · Lomography</figcaption></figure>
+          <figure class="photo-card"><img src="images/maple_leaves_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Maple Leaves · Lomography</figcaption></figure>
           <figure class="photo-card"><img src="images/lomography_rose_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Lomography Rose · Diana+</figcaption></figure>
           <figure class="photo-card"><img src="images/lomography_purpleflowers_web.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async"><figcaption>Purple Flowers · Diana+</figcaption></figure>
         </div>
