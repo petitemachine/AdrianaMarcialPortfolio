@@ -76,6 +76,12 @@
     .portrait { aspect-ratio:4/5; object-fit:cover; object-position:top; border-radius:180px 180px 12px 12px; filter:saturate(.82); }
     .available { position:absolute; right:-20px; bottom:20px; padding:12px 16px; background:var(--gold); border-radius:999px; font-size:12px; font-weight:700; }
     section { padding:100px 7vw; }
+    .home-perspective { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(48px,8vw,120px); align-items:start; background:var(--ink); color:#fff; }
+    .home-perspective .eyebrow { color:var(--gold); }
+    .home-perspective h2 { max-width:720px; margin:0; color:#fff; font-family:"Playfair Display",serif; font-size:clamp(40px,5.2vw,72px); font-weight:600; letter-spacing:-.04em; line-height:1.05; }
+    .perspective-copy { max-width:680px; padding-top:30px; border-top:1px solid #48483f; }
+    .perspective-copy p { margin-bottom:22px; color:#cfcec5; font-size:17px; line-height:1.8; }
+    .perspective-copy p:last-child { margin-bottom:0; color:#fff; font-weight:600; }
     .section-head { display:grid; grid-template-columns:.7fr 1.3fr; gap:30px; margin-bottom:45px; align-items:end; }
     .section-head h2 { margin-bottom:0; font-family:"Playfair Display",serif; font-size:clamp(40px,5vw,68px); letter-spacing:-.04em; line-height:.98; }
     .section-head p { max-width:580px; margin:0; color:var(--muted); font-size:17px; line-height:1.7; }
@@ -224,8 +230,10 @@
     .social-link:hover svg { transform:translateY(-2px); }
     @media (max-width:800px) {
       .nav-links a:nth-child(2) { display:none; }
-      .hero,.case-grid,.ui-grid,.bio,.section-head { grid-template-columns:1fr; }
+      .hero,.home-perspective,.case-grid,.ui-grid,.bio,.section-head { grid-template-columns:1fr; }
       .hero { padding-top:45px; }
+      .home-perspective { gap:42px; }
+      .perspective-copy { padding-top:26px; }
       .portrait-wrap { max-width:420px; }
       .about-strip { grid-template-columns:1fr 1fr; }
       .about-strip > div:first-child { grid-column:1/-1; }
@@ -282,6 +290,19 @@
         <span class="available">● Available for work · Dublin</span>
       </div>
     </header>
+
+    <section class="home-perspective" aria-labelledby="perspective-title">
+      <div>
+        <p class="eyebrow">Perspective</p>
+        <h2 id="perspective-title">I’m curious about how people perceive, interpret and respond to digital experiences.</h2>
+      </div>
+      <div class="perspective-copy">
+        <p>My background combines UX, digital marketing, visual storytelling and six years of analysing online content. This has strengthened my critical thinking, attention to detail and ability to identify patterns in user behaviour and data.</p>
+        <p>Accessibility first drew me to UX and continues to shape how I think about clarity, usability and inclusive design.</p>
+        <p>Photography influences how I approach visual communication. My interest in macro photography has trained me to notice details that are easy to overlook, while developing my sense of composition and storytelling.</p>
+        <p>I bring these perspectives together to create digital experiences that are clear, useful, inclusive and grounded in real user needs.</p>
+      </div>
+    </section>
 
     <section class="about-strip" aria-label="Profile summary">
       <div><strong>Design with empathy,<br>communicate with purpose.</strong><p>A bilingual creative professional connecting UX thinking with digital marketing.</p></div>
