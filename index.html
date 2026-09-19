@@ -117,7 +117,9 @@
     .about-strip span,.about-strip p { color:var(--muted); line-height:1.6; }
     .case { background:var(--gold); }
     .case-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:55px; align-items:center; }
+    .case-figure { margin:0; }
     .case-image { min-height:520px; object-fit:cover; border:10px solid rgba(255,255,255,.45); box-shadow:0 24px 60px rgba(23,23,19,.17); }
+    .case-figure figcaption { margin-top:14px; color:#4f452f; font-size:13px; line-height:1.5; }
     .tag { display:inline-block; margin-bottom:18px; padding:7px 10px; border:1px solid currentColor; border-radius:99px; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
     .case h2 { max-width:660px; font-family:"Playfair Display",serif; font-size:clamp(44px,6vw,78px); line-height:.96; }
     .case p { max-width:570px; font-size:17px; line-height:1.7; }
@@ -326,11 +328,14 @@
 
     <section class="case" id="ux-ui-work">
       <div class="case-grid">
-        <img class="case-image" src="images/uxpics_web.jpg" alt="Maynooth Furniture UX case study screens" width="1395" height="1400" loading="lazy" decoding="async">
+        <figure class="case-figure">
+          <img class="case-image" src="images/uxpics_web.jpg" alt="Maynooth Furniture UX case study screens" width="1395" height="1400" loading="lazy" decoding="async">
+          <figcaption>Maynooth Furniture · My first project using Adobe XD.</figcaption>
+        </figure>
         <div>
           <span class="tag">Featured UX Case Study</span>
           <h2>Maynooth Furniture</h2>
-          <p>Designing an accessible furniture-shopping experience for an older audience—turning user feedback into clearer navigation, readable interfaces and confident choices. This was my first project using Adobe XD.</p>
+          <p>Designing an accessible furniture-shopping experience for an older audience—turning user feedback into clearer navigation, readable interfaces and confident choices.</p>
           <div class="facts">
             <div class="fact"><small>Role</small>UX Research &amp; Design</div>
             <div class="fact"><small>Focus</small>Accessibility</div>

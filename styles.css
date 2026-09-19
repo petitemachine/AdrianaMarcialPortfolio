@@ -690,11 +690,19 @@ h6 {
 }
 
 .section-image {
+	margin: 0;
 	text-align: center;
 	padding-top: 30px;
 }
 
 .section-image img { width: 100%; max-width: 900px; }
+
+.section-image figcaption {
+	margin-top: 14px;
+	color: #707070;
+	font-size: 13px;
+	line-height: 1.5;
+}
 
 .project-intro {
 	max-width: 680px;
