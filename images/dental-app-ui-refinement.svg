@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 760" role="img" aria-labelledby="title description">
+  <title id="title">D-APP visual refinement</title>
+  <desc id="description">Three mobile screens show appointment preparation, a discreet comfort scale, and a step-by-step dental treatment plan.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop offset="0" stop-color="#edf8f5"/>
+      <stop offset="1" stop-color="#d9edf1"/>
+    </linearGradient>
+    <filter id="phone-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="17" stdDeviation="19" flood-color="#174450" flood-opacity=".14"/>
+    </filter>
+    <clipPath id="screen-one"><rect x="143" y="145" width="270" height="500" rx="27"/></clipPath>
+    <clipPath id="screen-two"><rect x="505" y="125" width="270" height="540" rx="27"/></clipPath>
+    <clipPath id="screen-three"><rect x="867" y="145" width="270" height="500" rx="27"/></clipPath>
+  </defs>
+
+  <rect width="1280" height="760" fill="url(#background)"/>
+  <circle cx="1118" cy="-20" r="250" fill="#c9e8e5" opacity=".6"/>
+  <circle cx="102" cy="709" r="190" fill="#d4e8f2" opacity=".8"/>
+  <path d="M0 626c183-53 323-55 506-5s395 57 774-33v172H0z" fill="#e7f4f2"/>
+  <text x="72" y="65" fill="#2a777d" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">D-APP  /  VISUAL REFINEMENT</text>
+  <text x="72" y="101" fill="#153946" font-family="Arial, sans-serif" font-size="27" font-weight="700">A calmer way through a dental visit.</text>
+
+  <!-- 01: Prepare -->
+  <rect x="136" y="138" width="284" height="514" rx="35" fill="#fff" stroke="#c6dadd" stroke-width="2" filter="url(#phone-shadow)"/>
+  <g clip-path="url(#screen-one)" font-family="Arial, sans-serif">
+    <rect x="143" y="145" width="270" height="500" fill="#f9fcfb"/>
+    <text x="163" y="171" fill="#233e48" font-size="12" font-weight="700">9:41</text>
+    <circle cx="373" cy="165" r="3" fill="#233e48"/><circle cx="383" cy="165" r="3" fill="#233e48"/><circle cx="393" cy="165" r="3" fill="#233e48"/>
+    <rect x="163" y="191" width="35" height="35" rx="11" fill="#d9f0eb"/>
+    <path d="M174 204c0-5 3-7 7-5 2 1 4 1 6 0 4-2 7 0 7 5 0 6-2 14-5 16-2 2-3-2-5-7-1-3-3-3-4 0-2 5-3 9-5 7-3-2-5-10-5-16z" fill="#268b8d"/>
+    <text x="208" y="214" fill="#17434b" font-size="16" font-weight="700">D-APP</text>
+    <text x="163" y="264" fill="#153946" font-size="24" font-weight="700">Good morning, John</text>
+    <text x="163" y="286" fill="#607982" font-size="12">Let's make today feel manageable.</text>
+    <rect x="163" y="312" width="230" height="146" rx="18" fill="#195b62"/>
+    <text x="181" y="337" fill="#b9e5dd" font-size="10" font-weight="700" letter-spacing="1.4">NEXT APPOINTMENT</text>
+    <text x="181" y="368" fill="#fff" font-size="21" font-weight="700">Dental check-up</text>
+    <text x="181" y="390" fill="#dbf2ef" font-size="12">Wed 24 Apr  ·  10:40 AM</text>
+    <rect x="181" y="411" width="112" height="30" rx="15" fill="#e2f4ee"/>
+    <text x="202" y="431" fill="#174f55" font-size="12" font-weight="700">Check in now</text>
+    <text x="163" y="490" fill="#153946" font-size="17" font-weight="700">Before your visit</text>
+    <circle cx="176" cy="519" r="11" fill="#e1f2ee"/><path d="m171 519 4 4 7-8" fill="none" stroke="#258b83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="197" y="523" fill="#35545c" font-size="13">Know what to expect</text>
+    <circle cx="176" cy="553" r="11" fill="#e1f2ee"/><path d="m171 553 4 4 7-8" fill="none" stroke="#258b83" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="197" y="557" fill="#35545c" font-size="13">Share your concerns</text>
+    <line x1="143" y1="603" x2="413" y2="603" stroke="#e1eceb"/>
+    <circle cx="192" cy="622" r="5" fill="#258b83"/><circle cx="278" cy="622" r="5" fill="#bbcbcb"/><circle cx="364" cy="622" r="5" fill="#bbcbcb"/>
+    <text x="174" y="639" fill="#258b83" font-size="9" font-weight="700">Home</text>
+    <text x="258" y="639" fill="#789196" font-size="9">Plan</text>
+    <text x="345" y="639" fill="#789196" font-size="9">Support</text>
+  </g>
+
+  <!-- 02: Signal comfort -->
+  <rect x="498" y="118" width="284" height="554" rx="35" fill="#fff" stroke="#c6dadd" stroke-width="2" filter="url(#phone-shadow)"/>
+  <g clip-path="url(#screen-two)" font-family="Arial, sans-serif">
+    <rect x="505" y="125" width="270" height="540" fill="#fff"/>
+    <text x="525" y="153" fill="#233e48" font-size="12" font-weight="700">9:41</text>
+    <circle cx="735" cy="147" r="3" fill="#233e48"/><circle cx="745" cy="147" r="3" fill="#233e48"/><circle cx="755" cy="147" r="3" fill="#233e48"/>
+    <text x="525" y="194" fill="#2b8a8a" font-size="11" font-weight="700" letter-spacing="1.5">DURING YOUR VISIT</text>
+    <text x="525" y="230" fill="#153946" font-size="24" font-weight="700">How are you feeling?</text>
+    <text x="525" y="251" fill="#607982" font-size="12">One tap tells your dental team.</text>
+    <rect x="525" y="278" width="230" height="320" rx="19" fill="#f5f9f8" stroke="#e2ecea"/>
+    <text x="544" y="305" fill="#42646b" font-size="12" font-weight="700">COMFORT SCALE</text>
+    <rect x="541" y="322" width="198" height="70" rx="14" fill="#e2f3ed" stroke="#aad8c6"/>
+    <circle cx="567" cy="357" r="14" fill="#24785f"/><path d="m561 357 4 4 8-8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="592" y="351" fill="#164d42" font-size="14" font-weight="700">I'm comfortable</text>
+    <text x="592" y="370" fill="#407066" font-size="11">We can continue</text>
+    <rect x="541" y="403" width="198" height="70" rx="14" fill="#fff3d9" stroke="#efd49b"/>
+    <circle cx="567" cy="438" r="14" fill="#b56a10"/><rect x="562" y="431" width="3" height="14" rx="1.5" fill="#fff"/><rect x="569" y="431" width="3" height="14" rx="1.5" fill="#fff"/>
+    <text x="592" y="432" fill="#70450e" font-size="14" font-weight="700">I need a pause</text>
+    <text x="592" y="451" fill="#86612b" font-size="11">Please check in with me</text>
+    <rect x="541" y="484" width="198" height="70" rx="14" fill="#fbe8e5" stroke="#efb4ab"/>
+    <circle cx="567" cy="519" r="14" fill="#b44d47"/><rect x="561" y="513" width="12" height="12" rx="2" fill="#fff"/>
+    <text x="592" y="513" fill="#783b38" font-size="14" font-weight="700">Please stop</text>
+    <text x="592" y="532" fill="#8e5551" font-size="11">I need help now</text>
+    <text x="525" y="623" fill="#6b858a" font-size="11">You can change your signal at any time.</text>
+    <line x1="505" y1="639" x2="775" y2="639" stroke="#e1eceb"/>
+    <rect x="612" y="650" width="57" height="4" rx="2" fill="#a9bcbd"/>
+  </g>
+
+  <!-- 03: Understand care -->
+  <rect x="860" y="138" width="284" height="514" rx="35" fill="#fff" stroke="#c6dadd" stroke-width="2" filter="url(#phone-shadow)"/>
+  <g clip-path="url(#screen-three)" font-family="Arial, sans-serif">
+    <rect x="867" y="145" width="270" height="500" fill="#f9fcfb"/>
+    <text x="887" y="171" fill="#233e48" font-size="12" font-weight="700">9:41</text>
+    <circle cx="1097" cy="165" r="3" fill="#233e48"/><circle cx="1107" cy="165" r="3" fill="#233e48"/><circle cx="1117" cy="165" r="3" fill="#233e48"/>
+    <text x="887" y="219" fill="#2b8a8a" font-size="11" font-weight="700" letter-spacing="1.5">YOUR CARE PLAN</text>
+    <text x="887" y="254" fill="#153946" font-size="24" font-weight="700">What to expect</text>
+    <text x="887" y="276" fill="#607982" font-size="12">Every step, at your pace.</text>
+    <rect x="887" y="306" width="230" height="60" rx="15" fill="#e2f3ed"/>
+    <text x="903" y="330" fill="#205b56" font-size="11" font-weight="700">READY FOR YOUR VISIT</text>
+    <text x="903" y="350" fill="#356c67" font-size="12">Your plan is here when you need it.</text>
+    <line x1="901" y1="405" x2="901" y2="532" stroke="#c5dbd8" stroke-width="2"/>
+    <circle cx="901" cy="404" r="14" fill="#258b83"/><text x="895" y="409" fill="#fff" font-size="12" font-weight="700">1</text>
+    <text x="926" y="401" fill="#153946" font-size="15" font-weight="700">Before treatment</text>
+    <text x="926" y="420" fill="#607982" font-size="11">Questions and preferences</text>
+    <circle cx="901" cy="466" r="14" fill="#258b83"/><text x="895" y="471" fill="#fff" font-size="12" font-weight="700">2</text>
+    <text x="926" y="463" fill="#153946" font-size="15" font-weight="700">At the appointment</text>
+    <text x="926" y="482" fill="#607982" font-size="11">Agree on a stop signal</text>
+    <circle cx="901" cy="528" r="14" fill="#d5e8e6"/><text x="895" y="533" fill="#356b6a" font-size="12" font-weight="700">3</text>
+    <text x="926" y="525" fill="#153946" font-size="15" font-weight="700">After your visit</text>
+    <text x="926" y="544" fill="#607982" font-size="11">Review your care notes</text>
+    <rect x="887" y="574" width="230" height="43" rx="21" fill="#195b62"/>
+    <text x="930" y="601" fill="#fff" font-size="13" font-weight="700">Contact your dental team</text>
+  </g>
+
+  <text x="278" y="704" text-anchor="middle" fill="#37666e" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">PREPARE</text>
+  <text x="640" y="704" text-anchor="middle" fill="#37666e" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">COMMUNICATE</text>
+  <text x="1002" y="704" text-anchor="middle" fill="#37666e" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">UNDERSTAND</text>
+</svg>

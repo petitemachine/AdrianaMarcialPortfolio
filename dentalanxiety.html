@@ -116,6 +116,27 @@
 			padding: 0;
 			margin-bottom: 0;
 		}
+		.case-visual {
+			max-width: 1040px;
+			margin: 0 0 44px;
+		}
+		.case-visual a { display: block; }
+		.case-visual img {
+			display: block;
+			width: 100%;
+			height: auto;
+			border: 1px solid #d8e9e8;
+			border-radius: 14px;
+		}
+		.case-visual figcaption {
+			margin-top: 10px;
+			padding: 0;
+			color: #616e70;
+			font-family: "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 13px;
+			line-height: 1.5;
+			text-align: left;
+		}
 		@media (max-width: 600px) {
 			.case-charts { grid-template-columns: 1fr; }
 			.case-meta { gap: 16px; }
@@ -160,9 +181,15 @@
 				<div class="case-meta-item"><span>Role</span><strong>UX Research &amp; Design</strong></div>
 				<div class="case-meta-item"><span>Method</span><strong>Double Diamond</strong></div>
 				<div class="case-meta-item"><span>Context</span><strong>DCU · User-Centred Design</strong></div>
-				<div class="case-meta-item"><span>Tools</span><strong>Figma · Survey · Interview</strong></div>
+				<div class="case-meta-item"><span>Tools</span><strong>Adobe XD · Survey · Interview</strong></div>
 			</div>
 		</div>
+		<figure class="case-visual">
+			<a href="images/dental-app-ui-refinement.svg" target="_blank" rel="noopener noreferrer" aria-label="Open the refined D-APP screens at full size">
+				<img src="images/dental-app-ui-refinement.svg" alt="Three D-APP interface concepts: preparing for an appointment, discreetly signalling comfort, and following a treatment plan" width="1280" height="760" decoding="async">
+			</a>
+			<figcaption>Visual refinement based on my original Adobe XD concept. These screens illustrate the experience before, during and after a visit; they are a design exploration, not a tested outcome. Select the image to view it full size.</figcaption>
+		</figure>
 
 		<!-- CASE BODY -->
 		<div class="step-grid" style="max-width:920px; margin-bottom:40px;">
@@ -207,7 +234,7 @@
 					<p class="step-text">The research pointed to one clear insight: control is the single most powerful
 						factor in lowering anxiety. My main design response was the <strong>Comfort
 						Scale</strong> — a feature that lets the patient tap their phone to signal
-						discomfort without speaking. Hearts change colour like a traffic light: red to
+						discomfort without speaking. In the original concept, hearts change colour like a traffic light: red to
 						stop, amber as stress rises, green to continue — shown to the dentist on screen
 						or as audio.</p>
 				</div>

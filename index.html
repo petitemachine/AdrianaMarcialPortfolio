@@ -155,6 +155,9 @@
     .ux-project-links { background:#f1eee5; }
     .ux-link-grid { display:grid; grid-template-columns:minmax(0,760px); gap:20px; }
     .ux-link-card { display:grid; grid-template-columns:auto 1fr; gap:18px; padding:28px; border:1px solid var(--line); background:var(--white); text-decoration:none; transition:transform .2s ease, box-shadow .2s ease; }
+    .ux-link-card--dental { display:block; padding:0; overflow:hidden; }
+    .ux-link-card--dental > img { display:block; width:100%; height:auto; background:#e9f5f3; }
+    .ux-link-card--dental .ux-link-copy { display:block; padding:26px 28px 28px; }
     .ux-link-card:hover,.ux-link-card:focus-visible { transform:translateY(-4px); box-shadow:0 16px 36px rgba(23,23,19,.1); outline:2px solid var(--gold); }
     .ux-link-emoji { font-size:42px; line-height:1; }
     .ux-link-card h3 { margin:5px 0 10px; font-family:"Playfair Display",serif; font-size:32px; }
@@ -360,9 +363,9 @@
         <p>Explore this project to understand the problem it addresses and the direction of the proposed experience.</p>
       </div>
       <div class="ux-link-grid">
-        <a class="ux-link-card" href="dentalanxiety.html">
-          <span class="ux-link-emoji" aria-hidden="true">🦷</span>
-          <span>
+        <a class="ux-link-card ux-link-card--dental" href="dentalanxiety.html">
+          <img src="images/dental-app-ui-refinement.svg" alt="Three refined D-APP screens for appointment preparation, a comfort signal, and a treatment plan" width="1280" height="760" loading="lazy" decoding="async">
+          <span class="ux-link-copy">
             <span class="eyebrow">UX case study</span>
             <h3>Dental Anxiety App</h3>
             <p><strong>Objective:</strong> Reduce uncertainty and help patients feel informed, prepared and more in control before a dental appointment.</p>
