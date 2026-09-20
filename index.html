@@ -213,6 +213,8 @@
     .photo-heading { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:28px; }
     .photo-heading h3 { margin:0; font-family:"Playfair Display",serif; font-size:clamp(34px,5vw,58px); }
     .photo-heading p { max-width:520px; margin:0; color:var(--muted); line-height:1.6; }
+    .photo-collection--campaign .photo-heading { display:block; }
+    .photo-collection--campaign .photo-heading p { max-width:720px; margin-top:14px; }
     .photo-equipment { display:inline-block; margin-bottom:9px; padding:6px 10px; border:1px solid var(--ink); border-radius:999px; color:var(--ink); font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
     .photo-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:16px; }
     .photo-card { position:relative; grid-column:span 2; min-height:330px; margin:0; overflow:hidden; background:#ddd; }
@@ -220,6 +222,9 @@
     .photo-card img { width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
     .photo-card:hover img { transform:scale(1.025); }
     .photo-card figcaption { position:absolute; left:12px; bottom:12px; padding:8px 11px; background:rgba(23,23,19,.84); color:#fff; font-size:11px; letter-spacing:.05em; }
+    .campaign-figure { max-width:960px; margin:0 auto; padding:14px; background:var(--ink); }
+    .campaign-figure img { width:100%; height:auto; }
+    .campaign-figure figcaption { padding:14px 3px 2px; color:var(--paper); font-size:13px; line-height:1.5; }
     .photo-grid--personal .photo-card:nth-child(n) { grid-column:span 2; min-height:390px; }
     .photo-grid--diana { grid-template-columns:repeat(2,1fr); }
     .photo-grid--diana .photo-card { grid-column:auto; min-height:520px; }
@@ -445,6 +450,14 @@
         <div class="creative-item"><img src="images/DvdcoverPassengers-AMARCIAL300.jpg" alt="" width="2480" height="3082" loading="lazy" decoding="async"><span class="creative-label">College Project · Photo Manipulation · Adobe Photoshop</span></div>
         <div class="creative-item"><img src="images/conchas_chocolate.jpg" alt="Handmade chocolate conchas" width="665" height="1182" loading="lazy" decoding="async"><span class="creative-label">Craft &amp; Making · Artisan Baking</span></div>
         <div class="creative-item"><img src="images/businescardpetasociation.jpg" alt="" width="3000" height="2250" loading="lazy" decoding="async"><span class="creative-label">College Project · Brand Identity · Adobe Illustrator</span></div>
+      </div>
+
+      <div class="photo-collection photo-collection--campaign" id="raiz-seasonal-content">
+        <div class="photo-heading"><h3>Seasonal Brand Content — Día de Muertos</h3><p>Original photography, styling and image editing created for Raíz Atelier’s seasonal Día de Muertos campaign.</p></div>
+        <figure class="campaign-figure">
+          <img src="images/raiz-dia-de-muertos-pan-de-muerto.jpg" alt="Sugar being dusted over Pan de Muerto beside orange marigolds for Raíz Atelier’s Día de Muertos campaign" width="2000" height="1641" loading="lazy" decoding="async">
+          <figcaption>Pan de Muerto · Seasonal campaign imagery for Raíz Atelier</figcaption>
+        </figure>
       </div>
 
       <div class="photo-collection">
