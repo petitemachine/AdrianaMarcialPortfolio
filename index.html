@@ -153,7 +153,7 @@
     .related-case p { margin:0; color:#aaa99f; }
     .related-case a { flex-shrink:0; color:var(--gold); font-weight:700; text-decoration:none; }
     .ux-project-links { background:#f1eee5; }
-    .ux-link-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .ux-link-grid { display:grid; grid-template-columns:minmax(0,760px); gap:20px; }
     .ux-link-card { display:grid; grid-template-columns:auto 1fr; gap:18px; padding:28px; border:1px solid var(--line); background:var(--white); text-decoration:none; transition:transform .2s ease, box-shadow .2s ease; }
     .ux-link-card:hover,.ux-link-card:focus-visible { transform:translateY(-4px); box-shadow:0 16px 36px rgba(23,23,19,.1); outline:2px solid var(--gold); }
     .ux-link-emoji { font-size:42px; line-height:1; }
@@ -357,7 +357,7 @@
     <section class="ux-project-links" aria-labelledby="more-ux-title">
       <div class="section-head">
         <div><h2 id="more-ux-title">More UX work</h2><h3 class="section-subtitle">Explore the objective.</h3></div>
-        <p>Open each project to understand the problem it addresses and the direction of the proposed experience.</p>
+        <p>Explore this project to understand the problem it addresses and the direction of the proposed experience.</p>
       </div>
       <div class="ux-link-grid">
         <a class="ux-link-card" href="dentalanxiety.html">
@@ -367,15 +367,6 @@
             <h3>Dental Anxiety App</h3>
             <p><strong>Objective:</strong> Reduce uncertainty and help patients feel informed, prepared and more in control before a dental appointment.</p>
             <span class="ux-link-action">Open the case study →</span>
-          </span>
-        </a>
-        <a class="ux-link-card" href="tdah-project.html">
-          <span class="ux-link-emoji" aria-hidden="true">🧠</span>
-          <span>
-            <span class="eyebrow">UX project · Week 1 report</span>
-            <h3>TDAH / ADHD Project</h3>
-            <p><strong>Objective:</strong> To design a flexible routine system that helps neurodivergent children move through everyday activities with greater independence, predictability and less overwhelm.</p>
-            <span class="ux-link-action">Read the first report →</span>
           </span>
         </a>
       </div>
