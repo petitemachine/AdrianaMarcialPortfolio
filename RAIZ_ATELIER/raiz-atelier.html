@@ -247,6 +247,7 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xu7humwxhn");
   </script>
+  <script src="order-schedule.js"></script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Raíz Atelier navigation">
@@ -280,7 +281,7 @@
     <section id="monthly-promotion" aria-labelledby="monthly-promotion-title" style="background:var(--cream,#f7f2e9);text-align:center;padding:36px 24px;">
       <span class="eyebrow">Offer of the month</span>
       <h2 id="monthly-promotion-title">Pan de Muerto, made to share</h2>
-      <img src="images/pan-de-muerto-white-boxes.png" alt="White Raíz Atelier boxes with four and six sugar and sesame Pan de Muerto, lined with food-safe paper" style="display:block;width:100%;max-width:1000px;height:auto;margin:24px auto;border-radius:12px;" loading="lazy">
+      <img src="images/pan-de-muerto-editorial-detail.jpg" alt="Raíz Atelier sugar and sesame Pan de Muerto" width="1400" height="933" loading="lazy" style="display:block;width:100%;max-width:1000px;height:auto;margin:24px auto;border-radius:12px;">
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px;margin:20px 0;">
         <div><h3>Box of 4 · €24</h3><p>Save €2</p></div>
         <div><h3>Box of 6 · €35</h3><p>Save €4</p></div>
@@ -482,15 +483,10 @@
     function populateDates(){
       const selected=dateInput.value;
       dateInput.replaceChildren(new Option('Choose a date',''));
-      const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Dublin',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
-      const local=Object.fromEntries(parts.map(p=>[p.type,p.value]));
-      const base=new Date(Date.UTC(+local.year,+local.month-1,+local.day));
       const fmt=new Intl.DateTimeFormat(document.documentElement.lang==='es'?'es-ES':'en-IE',{timeZone:'UTC',weekday:'long',day:'numeric',month:'long'});
-      for(let offset=1;offset<=35;offset++){
-        const date=new Date(base);date.setUTCDate(base.getUTCDate()+offset);
-        if(![0,4].includes(date.getUTCDay())||(offset===1&&+local.hour>=18))continue;
-        dateInput.add(new Option(fmt.format(date),date.toISOString().slice(0,10)));
-      }
+      RaizSchedule.availableDates().forEach(value=>{
+        dateInput.add(new Option(fmt.format(new Date(value+'T12:00:00Z')),value));
+      });
       if(Array.from(dateInput.options).some(o=>o.value===selected))dateInput.value=selected;
     }
     populateDates();
@@ -514,5 +510,7 @@
     };
   </script>
   <script src="raiz-language.js"></script>
+  <script src="order-summary.js"></script>
+  <script src="checkout-review.js"></script>
 </body>
 </html>
