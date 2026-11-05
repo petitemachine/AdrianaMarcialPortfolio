@@ -10,8 +10,12 @@
 	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dental Anxiety App — UX Case Study | Adriana Marcial</title>
-	<meta name="description" content="UX case study by Adriana Marcial: a mobile app designed to help people with dental anxiety feel in control before, during, and after treatment.">
+	<title>Dental Anxiety — Research-Driven UX Case Study | Adriana Marcial</title>
+	<meta name="description" content="Exploratory survey research, a practising dentist interview and Double Diamond: how Adriana Marcial translated dental anxiety insights into a UX concept.">
+	<meta property="og:title" content="Dental Anxiety — Research-Driven UX Case Study | Adriana Marcial">
+	<meta property="og:description" content="From exploratory survey and expert interview to design decisions, a proposed Comfort Scale and next steps for validation.">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://petitemachine.github.io/AdrianaMarcialPortfolio/dentalanxiety.html">
 	<meta name="author" content="Adriana Marcial">
 	<link rel="canonical" href="https://petitemachine.github.io/AdrianaMarcialPortfolio/dentalanxiety.html">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -141,20 +145,41 @@
 			.case-charts { grid-template-columns: 1fr; }
 			.case-meta { gap: 16px; }
 		}
+
+    .skip-link { position:fixed; top:8px; left:8px; z-index:1000; padding:12px 18px; background:#171713; color:#fff; transform:translateY(-160%); }
+    .skip-link:focus { transform:translateY(0); }
+    a:focus-visible, button:focus-visible { outline:3px solid #171713; outline-offset:4px; box-shadow:0 0 0 4px #fff; }
+    [id] { scroll-margin-top:100px; }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; animation:none !important; } }
+
+        .research-body { max-width:1040px; }
+        .research-body h2 { text-align:left; padding:0; margin:0 0 20px; font-size:32px; }
+        .research-note { text-align:left; padding:20px; margin:0 0 24px; border-left:4px solid #e9b940; background:#f7f5ef; color:#444; font-size:16px; line-height:1.7; }
+        .step-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+        .step-card { min-width:0; padding:24px 20px; }
+        .step-title { font-size:15px; line-height:1.5; letter-spacing:.05em; }
+        .step-text { color:#555; font-size:16px; line-height:1.75; margin:0; }
+        .case-toc { display:flex; flex-wrap:wrap; gap:12px 24px; margin:0 0 32px; padding:0; }
+        .case-toc a { color:#1a1916; padding:10px 0; }
+        footer { width:100%; left:auto; transform:none; gap:24px; padding:24px 30px; }
+        @media(max-width:600px) { footer { flex-direction:column; text-align:center; } }
+        @media(max-width:700px) { .step-grid { grid-template-columns:1fr; } .main-page-nav { flex-wrap:wrap; gap:14px; } }
+        @media(max-width:420px) { #container main { padding-left:18px !important; padding-right:18px !important; } .step-card { display:block; } .step-number { margin-bottom:12px; } }
 	</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG58XLLC"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<nav class="main-page-nav" aria-label="Main navigation">
-		<a class="main-page-brand" href="index.html#home">
+		<a class="main-page-brand" href="index.html#home" aria-label="Adriana Marcial — Home">
 			<span class="main-page-brand-mark" aria-hidden="true">AM</span>
 			<span>Adriana Marcial</span>
 		</a>
 		<div class="main-page-nav-links">
-			<a href="index.html#ux-ui-work" aria-current="page">Work</a>
+			<a href="index.html#digital-work">Work</a>
 			<a href="index.html#about-me">About</a>
 			<a href="contactme.html">Contact</a>
 		</div>
@@ -162,7 +187,7 @@
 
 <div id="container">
 
-	<main style="padding: 0 30px 60px;">
+	<main id="main-content" tabindex="-1" style="padding: 0 30px 60px;">
 
 		<!-- Back button -->
 		<div style="padding: 28px 0 8px;">
@@ -173,10 +198,9 @@
 
 		<!-- HERO -->
 		<div style="max-width:720px; margin-bottom:40px;">
-			<p class="case-eyebrow">UX Case Study</p>
+			<p class="case-eyebrow">Research-driven UX case study</p>
 			<h1 class="hero-title" style="text-align:left; padding:0 0 12px 0; font-size:40px;">Dental Anxiety App</h1>
-			<p class="case-lead">A mobile app that helps people with low-to-mild dental anxiety
-				feel accompanied and in control — before, during and after treatment.</p>
+			<p class="case-lead">An exploratory research project translating patient concerns and a practising dentist’s perspective into an app concept for clearer information, communication and patient control.</p>
 			<div class="case-meta">
 				<div class="case-meta-item"><span>Role</span><strong>UX Research &amp; Design</strong></div>
 				<div class="case-meta-item"><span>Method</span><strong>Double Diamond</strong></div>
@@ -191,89 +215,21 @@
 			<figcaption>Visual refinement based on my original Adobe XD concept. These screens illustrate the experience before, during and after a visit; they are a design exploration, not a tested outcome. Select the image to view it full size.</figcaption>
 		</figure>
 
-		<!-- CASE BODY -->
-		<div class="step-grid" style="max-width:920px; margin-bottom:40px;">
-			<div class="step-card">
-				<div class="step-number">01</div>
-				<div class="step-content">
-					<h3 class="step-title">PROJECT</h3>
-					<p class="step-text">For my user-centred design module at DCU, I designed a mobile app to support
-						people living with low-to-mild dental anxiety — a fear that affects around 20%
-						of people in Ireland and keeps many of them away from the dentist. My role was
-						to design an experience that helps anxious patients feel accompanied and in
-						control, grounding every decision in real research.</p>
-				</div>
-			</div>
-			<div class="step-card">
-				<div class="step-number">02</div>
-				<div class="step-content">
-					<h3 class="step-title">OBJECTIVE</h3>
-					<p class="step-text">Once they are in the chair, anxious patients often can't communicate their pain
-						or fear, so they avoid treatment altogether. My objective was to give them back
-						a sense of control, and to open honest communication between the patient and the
-						dental team — turning a feared appointment into one where the patient feels
-						understood.</p>
-				</div>
-			</div>
-			<div class="step-card step-card--wide">
-				<div class="step-number">03</div>
-				<div class="step-content">
-					<h3 class="step-title">PROCESS</h3>
-					<p class="step-text">I followed the Double Diamond framework: Discover, Define, Develop and Deliver.
-						I grounded the work in academic research on dental anxiety, ran an online survey
-						with people in Ireland, and interviewed a practising dentist to keep my solutions
-						close to real clinical practice. From the findings I built a persona — John, whose
-						trigger was a past painful experience — and mapped the five factors that matter
-						most to anxious patients, with loss of control at the top.</p>
-				</div>
-			</div>
-			<div class="step-card">
-				<div class="step-number">04</div>
-				<div class="step-content">
-					<h3 class="step-title">RESULTS</h3>
-					<p class="step-text">The research pointed to one clear insight: control is the single most powerful
-						factor in lowering anxiety. My main design response was the <strong>Comfort
-						Scale</strong> — a feature that lets the patient tap their phone to signal
-						discomfort without speaking. In the original concept, hearts change colour like a traffic light: red to
-						stop, amber as stress rises, green to continue — shown to the dentist on screen
-						or as audio.</p>
-				</div>
-			</div>
-			<div class="step-card">
-				<div class="step-number">05</div>
-				<div class="step-content">
-					<h3 class="step-title">REFLECTION</h3>
-					<p class="step-text">This project taught me to design for people at their most vulnerable. Working
-						within real constraints — a patient who can't speak, a fast-paced clinical
-						environment — pushed me to keep the interface simple and the feedback instant.
-						My biggest takeaway was that the strongest UX decisions come from listening
-						closely to both the data and the human behind it.</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- SURVEY CHARTS -->
-		<div style="max-width:920px;">
-			<span class="h9" style="text-align:left; display:block; margin-bottom:16px;">SURVEY INSIGHTS</span>
-			<div class="case-charts">
-				<figure>
-					<img src="images/chart_triggers.png" alt="Survey: what triggers anxiety during treatment">
-					<figcaption>Pain and needles lead the triggers — the insight behind the Comfort Scale.</figcaption>
-				</figure>
-				<figure>
-					<img src="images/chart_stress_before.png" alt="Survey: stress before the appointment">
-					<figcaption>Anxiety rises before the visit — supporting a check-in call beforehand.</figcaption>
-				</figure>
-				<figure>
-					<img src="images/chart_knowing.png" alt="Survey: would knowing the procedure help">
-					<figcaption>71% want to know the procedure in advance — a 'what to expect' feature.</figcaption>
-				</figure>
-				<figure>
-					<img src="images/chart_channels.png" alt="Survey: preferred contact channels">
-					<figcaption>Email leads the preferred channels — prioritised inside the app.</figcaption>
-				</figure>
-			</div>
-		</div>
+		<nav class="case-toc" aria-label="Case study sections"><a href="#research">Research &amp; findings</a><a href="#decisions">Design decisions</a><a href="#outcomes">Deliverables &amp; next steps</a></nav>
+        <section class="research-body" aria-labelledby="research">
+          <h2 id="research">Research to design</h2>
+          <p class="research-note">Research scope: exploratory convenience sample and one practising dentist interview. The completed-response count and original survey data have not been verified, so no participant totals, percentages or statistical claims are presented here.</p>
+          <div class="step-grid">
+<article class="step-card"><div class="step-number" aria-hidden="true">01</div><div class="step-content"><h3 class="step-title">Project &amp; research question</h3><p class="step-text">For my user-centred design module at DCU, I explored how a mobile experience could support people with low-to-mild dental anxiety. The question was: how might clearer information and a simple way to communicate discomfort help patients feel more prepared and in control? My role covered research, synthesis and UX design; the output is a design concept.</p></div></article>
+<article class="step-card"><div class="step-number" aria-hidden="true">02</div><div class="step-content"><h3 class="step-title">Discover · exploratory survey</h3><p class="step-text">The online questionnaire explored experiences, concerns and information needs around dental appointments. An exploratory survey recruited through a personal network using convenience sampling. Findings are directional and cannot be generalised to the wider patient population. Recruitment through personal contacts may introduce selection and response bias.</p></div></article>
+<article class="step-card"><div class="step-number" aria-hidden="true">03</div><div class="step-content"><h3 class="step-title">Discover · expert interview</h3><p class="step-text">I interviewed a practising dentist to bring a clinical perspective to patient anxiety, communication and the appointment experience. This complemented the patient survey with a professional viewpoint. One interview provides context for design exploration; it does not establish clinical consensus or validate the proposed app.</p></div></article>
+<article class="step-card"><div class="step-number" aria-hidden="true">04</div><div class="step-content"><h3 class="step-title">Define · research findings</h3><p class="step-text">The existing project synthesis identifies pain and needles, uncertainty before a visit, and difficulty communicating during treatment as concerns to explore. These themes helped frame a need for preparation and a sense of control. I developed the persona John around a past painful experience to focus the design. These are exploratory themes, not a verified ranking of anxiety factors.</p></div></article>
+<article class="step-card" id="decisions"><div class="step-number" aria-hidden="true">05</div><div class="step-content"><h3 class="step-title">Develop · from insight to design</h3><p class="step-text"><strong>Uncertainty before a visit → preparation content:</strong> explain what to expect in clear, manageable steps.<br><strong>Difficulty speaking during treatment → Comfort Scale:</strong> propose a simple way to signal discomfort or request a pause.<br><strong>Support across the appointment journey → treatment-plan view:</strong> bring preparation, in-appointment communication and follow-up information into one concept.</p></div></article>
+<article class="step-card" id="outcomes"><div class="step-number" aria-hidden="true">06</div><div class="step-content"><h3 class="step-title">Deliver · concept &amp; deliverables</h3><p class="step-text">The project produced an app concept and a Comfort Scale interaction, originally explored in Adobe XD. The visual refinement shown above presents the before, during and after journey. It demonstrates how research can guide content and interaction decisions. No validated reduction in anxiety, clinical benefit or measured product impact is reported.</p></div></article>
+<article class="step-card"><div class="step-number" aria-hidden="true">07</div><div class="step-content"><h3 class="step-title">Next steps · validation &amp; accessibility</h3><p class="step-text">The original Comfort Scale used traffic-light colours and hearts. A next iteration should pair colour with explicit text such as “Continue”, “Pause” and “Stop”, then test comprehension, contrast, touch targets and assistive-technology support. Broader patient recruitment and usability sessions with patients and dental professionals would help assess whether using a phone during treatment is practical, and whether the dentist notices and correctly interprets the signal.</p></div></article>
+<article class="step-card"><div class="step-number" aria-hidden="true">08</div><div class="step-content"><h3 class="step-title">Reflection · content &amp; web practice</h3><p class="step-text">This project strengthened my ability to turn exploratory research into clear information and purposeful design decisions. The same approach informs my content and web work: understand the audience, prioritise what they need, make the next action clear and validate the experience before claiming success.</p></div></article>
+          </div>
+        </section>
 
 	</main>
 
@@ -282,6 +238,7 @@
 		<a href="contactme.html" class="btn-contact">Say Hi! Let's talk</a>
 	</div>
 
+</div>
 	<!-- FOOTER -->
 	<footer>
 		<div class="copy">
@@ -294,7 +251,6 @@
 		</div>
 	</footer>
 
-</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

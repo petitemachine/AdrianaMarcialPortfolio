@@ -10,11 +10,11 @@
   <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Adriana Marcial | UX Designer &amp; Digital Marketing Specialist | Dublin</title>
-  <meta name="description" content="Portfolio of Adriana Marcial, a bilingual UX designer and digital marketing specialist based in Dublin. Explore UX research, UI design, applied marketing and creative work.">
+  <title>Adriana Marcial | Digital Content &amp; Web Specialist | Dublin</title>
+  <meta name="description" content="Adriana Marcial — Digital Content &amp; Web Specialist in Dublin. UX-informed content, SEO &amp; web analytics and visual storytelling, with web, campaign and research projects.">
   <meta name="author" content="Adriana Marcial">
-  <meta property="og:title" content="Adriana Marcial | UX Design &amp; Digital Marketing Portfolio">
-  <meta property="og:description" content="UX research, interface design, digital marketing and creative projects by Adriana Marcial in Dublin.">
+  <meta property="og:title" content="Adriana Marcial | Digital Content &amp; Web Specialist">
+  <meta property="og:description" content="UX-informed content, SEO &amp; web analytics and visual storytelling. Explore web, content and research projects by Adriana Marcial.">
   <meta property="og:url" content="https://petitemachine.github.io/AdrianaMarcialPortfolio/">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://petitemachine.github.io/AdrianaMarcialPortfolio/">
@@ -294,26 +294,35 @@
       text-decoration-thickness:1px !important;
       text-underline-offset:2px !important;
     }
+
+    .skip-link { position:fixed; top:8px; left:8px; z-index:1000; padding:12px 18px; background:#171713; color:#fff; transform:translateY(-160%); }
+    .skip-link:focus { transform:translateY(0); }
+    a:focus-visible, button:focus-visible { outline:3px solid #171713; outline-offset:4px; box-shadow:0 0 0 4px #fff; }
+    [id] { scroll-margin-top:100px; }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; animation:none !important; } }
+    .case-grid > *, .project--featured > * { min-width:0; }
+    @media (max-width:420px) { nav { flex-wrap:wrap; gap:14px; } .nav-links { gap:22px; } .facts { grid-template-columns:1fr; } .available { right:0; } }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG58XLLC"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <nav aria-label="Main navigation">
     <a class="brand" href="#home"><span class="brand-mark">AM</span><span>Adriana Marcial</span></a>
-    <div class="nav-links"><a href="#ux-ui-work">Work</a><a href="#about-me">About</a><a href="contactme.html">Contact</a></div>
+    <div class="nav-links"><a href="#digital-work">Work</a><a href="#about-me">About</a><a href="contactme.html">Contact</a></div>
   </nav>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <header class="hero" id="home">
       <div>
-        <p class="eyebrow">UX Designer · Digital Marketing Specialist</p>
+        <p class="eyebrow">Digital Content &amp; Web Specialist</p>
         <h1>Adriana<br><em>Marcial.</em></h1>
         <p class="hero-value">Design with empathy, <span>communicate with purpose.</span></p>
-        <p class="hero-copy">I create thoughtful digital experiences that bring together user-centred design, visual communication and marketing strategy.</p>
-        <div class="actions"><a class="button primary" href="#ux-ui-work">View my work ↓</a><a class="button" href="contactme.html#contact-form">Let’s talk</a></div>
+        <p class="hero-copy">UX-Informed Content · SEO &amp; Web Analytics · Visual Storytelling. I bring research, clear content and visual communication together to create useful digital experiences.</p>
+        <div class="actions"><a class="button primary" href="#digital-work">View my work ↓</a><a class="button" href="contactme.html#contact-form">Let’s talk</a></div>
       </div>
       <div class="portrait-wrap">
         <img class="portrait" src="images/adrianavintage572.jpg" alt="Adriana Marcial" width="572" height="780" fetchpriority="high" decoding="async">
@@ -327,7 +336,7 @@
         <h2 id="perspective-title">I’m curious about how people perceive, interpret and respond to digital experiences.</h2>
       </div>
       <div class="perspective-copy">
-        <p>My background combines UX, digital marketing, visual storytelling and six years of analysing online content. This has strengthened my critical thinking, attention to detail and ability to identify patterns in user behaviour and data.</p>
+        <p>My background combines digital marketing, visual storytelling, UX and six years of analysing online content. This has strengthened my critical thinking, attention to detail and ability to identify patterns in user behaviour and data.</p>
         <p>Accessibility first drew me to UX and continues to shape how I think about clarity, usability and inclusive design.</p>
         <p>Photography influences how I approach visual communication. My interest in macro photography has trained me to notice details that are easy to overlook, while developing my sense of composition and storytelling.</p>
         <p>I bring these perspectives together to create digital experiences that are clear, useful, inclusive and grounded in real user needs.</p>
@@ -335,75 +344,16 @@
     </section>
 
     <section class="about-strip" aria-label="Profile summary">
-      <div><strong>A bilingual creative professional.</strong><p>Connecting UX thinking with digital marketing.</p></div>
+      <div><strong>A bilingual creative professional.</strong><p>Connecting content, websites and digital marketing.</p></div>
+      <a href="#digital-work" aria-label="Go to web and digital content work"><span class="about-strip-title">Web / Content</span><span>Content Planning<br>Publishing<br>Digital Marketing</span></a>
       <a href="#ux-ui-work" aria-label="Go to UX and UI projects"><span class="about-strip-title">UX / UI</span><span>Research<br>Prototyping<br>Interface Design</span></a>
-      <a href="#digital-work" aria-label="Go to the applied digital marketing project"><span class="about-strip-title">Marketing</span><span>Applied Strategy<br>Content<br>SEO</span></a>
       <a href="#creative-work" aria-label="Go to photography and creative media"><span class="about-strip-title">Creative</span><span>Photography<br>Graphic Design<br>Multimedia</span></a>
       <a href="#about-me" aria-label="Go to Adriana's bilingual profile"><span class="about-strip-title">EN / ES</span><span>Bilingual<br>Multicultural<br>Dublin-based</span></a>
     </section>
 
-    <section class="case" id="ux-ui-work">
-      <div class="case-grid">
-        <figure class="case-figure">
-          <img class="case-image" src="images/uxpics_web.jpg" alt="Maynooth Furniture UX case study screens" width="1395" height="1400" loading="lazy" decoding="async">
-          <figcaption>Maynooth Furniture · My first project using Adobe XD.</figcaption>
-        </figure>
-        <div>
-          <span class="tag">Featured UX Case Study</span>
-          <h2>Maynooth Furniture</h2>
-          <p>Designing an accessible furniture-shopping experience for an older audience—turning user feedback into clearer navigation, readable interfaces and confident choices.</p>
-          <div class="facts">
-            <div class="fact"><small>Role</small>UX Research &amp; Design</div>
-            <div class="fact"><small>Focus</small>Accessibility</div>
-            <div class="fact"><small>Method</small>User Testing</div>
-          </div>
-          <a class="button" href="portofolio.html#uxcase">Read the case study →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="ux-project-links" aria-labelledby="more-ux-title">
-      <div class="section-head">
-        <div><h2 id="more-ux-title">More UX work</h2><h3 class="section-subtitle">Explore the objective.</h3></div>
-        <p>Explore this project to understand the problem it addresses and the direction of the proposed experience.</p>
-      </div>
-      <div class="ux-link-grid">
-        <a class="ux-link-card ux-link-card--dental" href="dentalanxiety.html">
-          <img src="images/dental-app-ui-refinement.svg" alt="Three refined D-APP screens for appointment preparation, a comfort signal, and a treatment plan" width="1280" height="760" loading="lazy" decoding="async">
-          <span class="ux-link-copy">
-            <span class="eyebrow">UX case study</span>
-            <h3>Dental Anxiety App</h3>
-            <p><strong>Objective:</strong> Reduce uncertainty and help patients feel informed, prepared and more in control before a dental appointment.</p>
-            <span class="ux-link-action">Open the case study →</span>
-          </span>
-        </a>
-      </div>
-    </section>
-
-    <section class="ui-showcase">
-      <div class="ui-grid">
-        <div class="ui-copy">
-          <p class="eyebrow">High-fidelity UI challenge</p>
-          <h2>From reference to a new visual direction</h2>
-          <p>I reinterpreted a conference-calling homepage, retaining its core content and structure while giving it a warmer visual identity. See the reference beside my solution and the decisions behind the change.</p>
-          <a class="button" href="ui-redesign-challenge.html">Explore the case study →</a>
-        </div>
-        <div class="ui-comparison" aria-label="Reference and redesigned homepage previews">
-          <figure>
-            <img src="images/conference-reference-web.jpg" alt="Purple conference-calling homepage provided as the visual reference" width="1440" height="4105" loading="lazy" decoding="async">
-            <figcaption class="reference-label">Reference · Purple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/conference-redesign-web.jpg" alt="Adriana's warm orange redesign of the conference-calling homepage" width="1440" height="4118" loading="lazy" decoding="async">
-            <figcaption class="solution-label">My solution · Orange</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
     <section class="projects" id="digital-work">
       <div class="section-head">
-        <div><h2>Digital marketing</h2><h3 class="section-subtitle">Brand strategy in practice.</h3></div>
+        <div><h2>Web &amp; digital content</h2><h3 class="section-subtitle">Raíz Atelier: from story to website.</h3></div>
         <p>A self-initiated project applying audience insight, visual identity, content planning and a practical digital customer journey.</p>
       </div>
       <div class="project-grid project-grid--single">
@@ -412,7 +362,7 @@
               <img class="raiz-project-image" src="RAIZ_ATELIER/images/product-design-raiz-atelier-web.jpg" alt="Raíz Atelier product design, packaging and brand identity presentation" width="1400" height="933" loading="lazy" decoding="async">
             </button>
           <div class="project-copy">
-            <span class="project-number">PRODUCT DESIGN &amp; DIGITAL MARKETING</span>
+            <span class="project-number">FEATURED WEB &amp; CONTENT PROJECT</span>
             <h3>Raíz Atelier Mexican Bakery</h3>
             <div class="marketing-steps">
               <div class="marketing-step">
@@ -436,9 +386,70 @@
                 <div><h4>BRAND PROMISE</h4><p>Raíz Atelier makes bread in small batches rather than through mass production. Each bake is prepared with care, attention to detail and love, protecting the freshness, quality and handmade character of every product.</p></div>
               </div>
             </div>
-            <a href="RAIZ_ATELIER/raiz-atelier.html">Visit Landing Page →</a>
+            <a href="RAIZ_ATELIER/raiz-atelier.html">Explore the website →</a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="case" id="ux-ui-work" aria-labelledby="dental-title">
+      <div class="case-grid">
+        <figure class="case-figure">
+          <img class="case-image" src="images/dental-app-ui-refinement.svg" alt="D-APP design exploration: appointment preparation, comfort signalling and a treatment plan" width="1280" height="760" loading="lazy" decoding="async">
+          <figcaption>Dental Anxiety · Research-informed app concept; visual refinement, not a tested product.</figcaption>
+        </figure>
+        <div>
+          <span class="tag">Featured research-driven UX case study</span>
+          <h2 id="dental-title">Dental Anxiety</h2>
+          <p>From an exploratory survey and an interview with a practising dentist to clearer patient information and a proposed way to signal discomfort. See how research shaped the design, and what still needs validation.</p>
+          <div class="facts">
+            <div class="fact"><small>Research</small>Survey &amp; expert interview</div>
+            <div class="fact"><small>Framework</small>Double Diamond</div>
+            <div class="fact"><small>Focus</small>Clarity &amp; patient control</div>
+          </div>
+          <a class="button" href="dentalanxiety.html">Explore the research &amp; decisions →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="case" id="more-ux-work">
+      <div class="case-grid">
+        <figure class="case-figure">
+          <img class="case-image" src="images/uxpics_web.jpg" alt="Maynooth Furniture UX case study screens" width="1395" height="1400" loading="lazy" decoding="async">
+          <figcaption>Maynooth Furniture · My first project using Adobe XD.</figcaption>
+        </figure>
+        <div>
+          <span class="tag">Further UX work · Accessibility</span>
+          <h2 id="more-ux-title">Maynooth Furniture</h2>
+          <p>Designing an accessible furniture-shopping experience for an older audience—turning user feedback into clearer navigation, readable interfaces and confident choices.</p>
+          <div class="facts">
+            <div class="fact"><small>Role</small>UX Research &amp; Design</div>
+            <div class="fact"><small>Focus</small>Accessibility</div>
+            <div class="fact"><small>Method</small>User Testing</div>
+          </div>
+          <a class="button" href="portofolio.html#uxcase">Read the case study →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ui-showcase">
+      <div class="ui-grid">
+        <div class="ui-copy">
+          <p class="eyebrow">High-fidelity UI challenge</p>
+          <h2>From reference to a new visual direction</h2>
+          <p>I reinterpreted a conference-calling homepage, retaining its core content and structure while giving it a warmer visual identity. See the reference beside my solution and the decisions behind the change.</p>
+          <a class="button" href="ui-redesign-challenge.html">Explore the case study →</a>
+        </div>
+        <div class="ui-comparison" aria-label="Reference and redesigned homepage previews">
+          <figure>
+            <img src="images/conference-reference-web.jpg" alt="Purple conference-calling homepage provided as the visual reference" width="1440" height="4105" loading="lazy" decoding="async">
+            <figcaption class="reference-label">Reference · Purple</figcaption>
+          </figure>
+          <figure>
+            <img src="images/conference-redesign-web.jpg" alt="Adriana's warm orange redesign of the conference-calling homepage" width="1440" height="4118" loading="lazy" decoding="async">
+            <figcaption class="solution-label">My solution · Orange</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -502,15 +513,15 @@
         <h2>About me</h2>
         <h3 class="bio-tagline">Curious by nature. Human-centred by design.</h3>
         <p>My path from Mexico to Canada and Ireland has shaped the way I observe, communicate and design. With a background in marketing and growing expertise in UX, I approach digital experiences with empathy, cultural awareness and a practical understanding of audiences.</p>
-        <p>I’m currently deepening my skills in digital marketing, SEO and web development while building work that connects research, storytelling and thoughtful visual design.</p>
-        <div class="skills"><span>UX Research</span><span>UI Design</span><span>Digital Marketing</span><span>Content</span><span>SEO</span><span>English / Spanish</span></div>
+        <p>My work connects content planning, hands-on website development and publishing, UX research and visual storytelling. I’m continuing to develop my SEO and web analytics skills to better understand how people find and use content.</p>
+        <div class="skills"><span>UX-Informed Content</span><span>Web Content</span><span>Digital Marketing</span><span>SEO</span><span>Web Analytics</span><span>Visual Storytelling</span><span>English / Spanish</span></div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <h2>Have a project or opportunity in mind?</h2>
       <h3>Let’s create something meaningful together.</h3>
-      <p>Open to UX design, digital marketing and creative opportunities in Dublin and remotely.</p>
+      <p>Open to digital content, web and digital marketing opportunities in Dublin and remotely.</p>
       <a class="button primary" href="contactme.html#contact-form">Say hi! Let’s talk →</a>
     </section>
   </main>
