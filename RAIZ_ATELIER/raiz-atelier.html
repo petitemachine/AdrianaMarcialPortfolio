@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Raíz Atelier Mexican Bakery | Handmade Mexican Baking</title>
-  <meta name="description" content="Discover handmade Mexican baking from Raíz Atelier. View the menu and enquire through WhatsApp or the online order form.">
+  <title>Raíz Atelier | Mexican Sweet Bread in Dublin</title>
+  <meta name="description" content="Traditional Mexican sweet bread, thoughtfully baked in Dublin. Discover Raíz Atelier’s family roots in Oaxaca, small-batch bakes and bread made to be shared.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet">
@@ -53,10 +53,10 @@
       grid-template-columns:1.05fr .95fr;
       background:var(--paper);
     }
-    .hero-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(48px,8vw,110px); transform:translateY(-28px); }
+    .hero-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(40px,6vw,88px); }
     .eyebrow { display:block; margin:0 0 18px; color:var(--clay); font-size:13px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
     h1,h2,h3,p { margin-top:0; }
-    h1 { max-width:720px; margin-bottom:24px; font-family:"Playfair Display",serif; font-size:clamp(56px,8vw,106px); line-height:.88; letter-spacing:-.05em; }
+    h1 { max-width:720px; margin-bottom:24px; font-family:"Playfair Display",serif; font-size:clamp(44px,5.4vw,78px); line-height:1.04; letter-spacing:-.04em; overflow-wrap:break-word; }
     h1 em { color:var(--clay); font-weight:600; }
     .hero-copy > p:not(.eyebrow) { max-width:580px; color:var(--muted); font-size:18px; line-height:1.7; }
     .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
@@ -130,6 +130,12 @@
     .origin-card h3 { margin-bottom:16px; font-family:"Playfair Display",serif; font-size:clamp(32px,4vw,48px); }
     .origin-card p { color:var(--muted); font-size:16px; line-height:1.8; }
     .origin-quote { margin:40px 0 0; color:var(--cocoa); font-family:"Playfair Display",serif; font-size:clamp(28px,4vw,48px); font-style:italic; text-align:center; }
+    #story,#philosophy,#merienda,#menu,#order { scroll-margin-top:110px; }
+    .story-links { display:flex; flex-wrap:wrap; gap:16px 24px; margin-top:24px; font-weight:700; }
+    .merienda { background:var(--white); }
+    .merienda .section-heading { max-width:760px; margin:0 auto; }
+    .merienda .button { margin-top:12px; }
+    .button:focus-visible,.story-links a:focus-visible { outline:3px solid var(--clay); outline-offset:5px; }
     .order { background:var(--cocoa); color:var(--cream); }
     .order .eyebrow { color:var(--copper-light); }
     .order .section-heading h2::before { background:var(--copper-light); }
@@ -265,11 +271,12 @@
     <header class="hero" id="home">
       <div class="hero-copy">
         <span class="eyebrow">Mexican bakery · Small-batch baking</span>
-        <h1>A little piece of <em>Mexico</em>, baked with care.</h1>
-        <p>Small-batch Mexican breads inspired by tradition and memory. Choose your favourites from our menu.</p>
+        <h1>Rooted in tradition. <em>Made to be shared.</em></h1>
+        <p>Traditional Mexican sweet bread, thoughtfully baked in Ireland.</p>
+        <p>Inspired by generations of family baking in Oaxaca, Raíz Atelier brings the comforting flavours of a Mexican neighbourhood bakery to your table.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#menu" target="_blank" rel="noopener noreferrer">Shop the menu</a>
-          <a class="button secondary" href="#order">View basket</a>
+          <a class="button primary" href="#menu">Shop the menu</a>
+          <a class="button secondary" href="#story">Discover our story</a>
         </div>
       </div>
       <img class="hero-image" src="images/raiz-dia-de-muertos-two-finishes.jpg" alt="Sugar and sesame Pan de Muerto from Raíz Atelier">
@@ -280,7 +287,8 @@
     <section id="monthly-promotion" aria-labelledby="monthly-promotion-title" style="background:var(--cream,#f7f2e9);text-align:center;padding:36px 24px;">
       <span class="eyebrow">Offer of the month</span>
       <h2 id="monthly-promotion-title">Pan de Muerto, made to share</h2>
-      <img src="images/pan-de-muerto-white-boxes.png" alt="White Raíz Atelier boxes with four and six sugar and sesame Pan de Muerto, lined with food-safe paper" style="display:block;width:100%;max-width:1000px;height:auto;margin:24px auto;border-radius:12px;" loading="lazy">
+      <img src="images/pan-de-muerto-editorial-detail.jpg" alt="Editorial photograph of Raíz Atelier sugar and sesame Pan de Muerto" width="1400" height="933" loading="lazy" style="display:block;width:100%;max-width:1000px;height:auto;margin:24px auto;border-radius:12px;">
+
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px;margin:20px 0;">
         <div><h3>Box of 4 · €24</h3><p>Save €2</p></div>
         <div><h3>Box of 6 · €35</h3><p>Save €4</p></div>
@@ -310,7 +318,7 @@
           <div class="product-copy"><h3>Chocolate Conchas</h3><p>Classic Mexican sweet bread with a chocolate topping. Made with pork lard.</p><p class="product-price"><strong>€4.50 each</strong></p><p class="allergen-note"><strong>Allergens:</strong> Wheat (gluten), milk, eggs.</p><fieldset class="basket-choice" data-name="Traditional Conchas"><legend class="sr-only">Choose Chocolate Conchas</legend><select class="basket-flavour" aria-label="Variety"><option>Chocolate</option></select></fieldset></div>
         </article>
         <article class="product-card">
-<div class="product-copy"><span class="seasonal-label">Premium</span><h3>Gourmet Butter Conchas</h3><p>Made with 100% butter, in cocoa or Mexican vanilla. No pork ingredients.</p><p class="product-price"><strong>€5 each</strong></p><p class="allergen-note"><strong>Allergens:</strong> Wheat (gluten), milk, eggs.</p><fieldset class="basket-choice" data-name="Gourmet Butter Conchas"><legend class="sr-only">Choose Gourmet Butter Conchas</legend><label for="basket-flavour-2">Variety</label><select id="basket-flavour-2" class="basket-flavour"><option>Cocoa</option><option>Mexican Vanilla</option><option>Mixed flavours</option></select><label for="basket-pack-2">Box size</label><select id="basket-pack-2" class="basket-pack"><option value="4">Box of 4</option><option value="6">Box of 6</option></select><label for="basket-count-2">Quantity</label><input id="basket-count-2" class="basket-count" type="number" min="1" step="1" value="1"><label for="gourmet-extra">Extra conchas per box</label><input id="gourmet-extra" class="basket-extra" type="number" min="0" step="1" value="0"><button type="button" class="add-to-cart">Add</button><span class="added-status" aria-live="polite"></span></fieldset></div>
+<div class="product-copy"><span class="seasonal-label">Butter recipe</span><h3>Gourmet Butter Conchas</h3><p>Made with 100% butter, in cocoa or Mexican vanilla. No pork ingredients.</p><p class="product-price"><strong>€5 each</strong></p><p class="allergen-note"><strong>Allergens:</strong> Wheat (gluten), milk, eggs.</p><fieldset class="basket-choice" data-name="Gourmet Butter Conchas"><legend class="sr-only">Choose Gourmet Butter Conchas</legend><label for="basket-flavour-2">Variety</label><select id="basket-flavour-2" class="basket-flavour"><option>Cocoa</option><option>Mexican Vanilla</option><option>Mixed flavours</option></select><label for="basket-pack-2">Box size</label><select id="basket-pack-2" class="basket-pack"><option value="4">Box of 4</option><option value="6">Box of 6</option></select><label for="basket-count-2">Quantity</label><input id="basket-count-2" class="basket-count" type="number" min="1" step="1" value="1"><label for="gourmet-extra">Extra conchas per box</label><input id="gourmet-extra" class="basket-extra" type="number" min="0" step="1" value="0"><button type="button" class="add-to-cart">Add</button><span class="added-status" aria-live="polite"></span></fieldset></div>
         </article>
         <article class="product-card">
           <div class="product-copy"><h3>Mazapán Conchas</h3><p>Filled with Mexican peanut mazapán. Until sold out. Made with pork lard.</p><p class="product-price"><strong>€5 each</strong></p><p class="allergen-note"><strong>Allergens:</strong> Wheat (gluten), milk, eggs. Peanuts.</p><fieldset class="basket-choice" data-name="Mazapán Conchas"><legend class="sr-only">Choose Mazapán Conchas</legend><label for="basket-flavour-4">Variety</label><select id="basket-flavour-4" class="basket-flavour"><option>Mazapán</option></select><label for="basket-pack-4">Box size</label><select id="basket-pack-4" class="basket-pack"><option value="4">Box of 4</option><option value="6">Box of 6</option></select><label for="basket-count-4">Quantity</label><input id="basket-count-4" class="basket-count" type="number" min="1" step="1" value="1"><button type="button" class="add-to-cart">Add</button><span class="added-status" aria-live="polite"></span></fieldset></div>
@@ -334,32 +342,37 @@
     <section class="story" id="story">
       <img src="images/Pan_de_muerto_con_azucar_jpg.jpg" alt="Mexican pan de muerto">
       <div>
-        <span class="eyebrow">The idea behind Raíz</span>
-        <h2>Tradition, memory and creativity at the table.</h2>
-        <p>Raíz means “root”. The project celebrates the flavours and visual language of Mexican baking while creating warm, memorable experiences around food.</p>
-        <p>Every product is made to create a warm, memorable experience around Mexican flavours, tradition and time shared at the table.</p>
+        <span class="eyebrow">Our story · Oaxaca to Ireland</span>
+        <h2>A story that began generations ago.</h2>
+        <p>My family’s baking story began in Oaxaca, Mexico, where my great-grandfather Ernesto was a baker and my grandfather continued the tradition.</p>
+        <p>I grew up with the smell of freshly baked bread at my grandparents’ home, gathering with my cousins to help prepare and decorate bread for Día de Muertos. My mother later studied baking professionally after retiring, continuing that connection to the craft.</p>
+        <p>Years later, living in Ireland, I began searching for those familiar flavours again. Family recipes became years of learning, experimenting and practising until I found confidence in the quality and consistency of my bakes.</p>
+        <p>Raíz Atelier is my way of honouring that heritage while creating something of my own: bread made with care, rooted in memory and meant to be shared.</p>
+        <p>Located in Cherrywood, Dublin. Conchas and Pan de Muerto, baked in small batches.</p>
+        <div class="story-links"><a href="#philosophy">Why Atelier?</a><a href="#merienda">The Mexican merienda</a></div>
       </div>
     </section>
 
-    <section class="origin-purpose" aria-labelledby="origin-title">
+    <section class="origin-purpose" id="philosophy" aria-labelledby="philosophy-title">
       <div class="section-heading">
-        <span class="eyebrow">Our roots</span>
-        <h2 id="origin-title">How Raíz Atelier began.</h2>
-        <p>Raíz grew from a desire to keep the flavours, rituals and memories of Mexican baking close—even while living far from home.</p>
+        <span class="eyebrow">Our philosophy</span>
+        <h2 id="philosophy-title">Why Atelier?</h2>
+        <p>Atelier means a workshop: a place to learn, practise and create. For me, it means giving every recipe the time, care and attention it deserves.</p>
       </div>
       <div class="origin-grid">
-        <article class="origin-card">
-          <span class="eyebrow">How it began</span>
-          <h3>A connection to home.</h3>
-          <p>Inspired by Adriana’s Mexican roots and the food traditions of Oaxaca, Raíz Atelier began as a personal exploration of breads that carry memory. Each bake became a way to reconnect with familiar flavours and share part of that cultural story with others.</p>
-        </article>
-        <article class="origin-card">
-          <span class="eyebrow">Our purpose</span>
-          <h3>Tradition made shareable.</h3>
-          <p>The purpose of Raíz is to celebrate Mexican baking through thoughtfully developed products, careful presentation and warm customer experiences. It brings together time, craft and storytelling—from the recipe and packaging to the digital ordering journey.</p>
-        </article>
+        <article class="origin-card"><span class="eyebrow">The craft</span><h3>Quality before quantity.</h3><p>I bake in small batches so I can pay attention to each dough, each recipe and each bake. Consistency and care matter more than making larger quantities.</p></article>
+        <article class="origin-card"><span class="eyebrow">The feeling</span><h3>Familiar flavours. A warm welcome.</h3><p>Raíz Atelier is about the comfort of a neighbourhood bakery: honest flavours, thoughtful baking and bread that belongs at an everyday table.</p></article>
       </div>
-      <p class="origin-quote">“Authentic Mexican bread, rooted in tradition and memory.”</p>
+    </section>
+
+    <section class="merienda" id="merienda" aria-labelledby="merienda-title">
+      <div class="section-heading">
+        <span class="eyebrow">The Mexican merienda</span>
+        <h2 id="merienda-title">A moment around the table.</h2>
+        <p>In many Mexican homes, merienda is a chance to gather over sweet bread and coffee, hot chocolate or milk. Often enjoyed in the evening, it is a moment to slow down, talk and share something together.</p>
+        <p>With Raíz Atelier, I hope to bring a little of that warmth to your table, wherever you call home.</p>
+        <a class="button secondary" href="#menu">Find something to share</a>
+      </div>
     </section>
 
     <section class="order" id="order">
