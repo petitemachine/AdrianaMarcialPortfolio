@@ -117,6 +117,10 @@
     .about-strip .about-strip-title { display:block; margin-bottom:8px; color:var(--ink); font-family:"Playfair Display",serif; font-size:34px; font-weight:700; line-height:1.2; }
     .about-strip span,.about-strip p { color:var(--muted); line-height:1.6; }
     .case { background:var(--gold); }
+    #more-ux-work { background:var(--paper); }
+    #more-ux-work .case-grid { max-width:960px; margin:auto; grid-template-columns:minmax(0,.7fr) minmax(0,1fr); }
+    #more-ux-work h2 { font-size:clamp(36px,4vw,56px); }
+    @media (max-width:800px) { #more-ux-work .case-grid { grid-template-columns:1fr; } }
     .case-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:55px; align-items:center; }
     .case-figure { margin:0; }
     .case-image { height:auto; object-fit:contain; border:10px solid rgba(255,255,255,.45); box-shadow:0 24px 60px rgba(23,23,19,.17); }
@@ -255,7 +259,7 @@
     .social-link svg { width:21px; height:21px; fill:var(--gold); flex:none; transition:transform .2s ease; }
     .social-link:hover svg { transform:translateY(-2px); }
     @media (max-width:800px) {
-      .nav-links a:nth-child(2) { display:none; }
+      .nav-links { flex-wrap:wrap; }
       .hero,.home-perspective,.case-grid,.ui-grid,.bio,.section-head { grid-template-columns:1fr; }
       .hero { padding-top:45px; }
       .home-perspective { gap:42px; }
@@ -301,7 +305,7 @@
     [id] { scroll-margin-top:100px; }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; animation:none !important; } }
     .case-grid > *, .project--featured > * { min-width:0; }
-    @media (max-width:420px) { nav { flex-wrap:wrap; gap:14px; } .nav-links { gap:22px; } .facts { grid-template-columns:1fr; } .available { right:0; } }
+    @media (max-width:420px) { nav { flex-wrap:wrap; gap:10px; } .nav-links { gap:12px; } .brand { gap:8px; } .facts { grid-template-columns:1fr; } .available { right:0; } }
   </style>
 </head>
 <body>
@@ -321,7 +325,7 @@
         <p class="eyebrow">Digital Content &amp; Web Specialist</p>
         <h1>Adriana<br><em>Marcial.</em></h1>
         <p class="hero-value">Design with empathy, <span>communicate with purpose.</span></p>
-        <p class="hero-copy">UX-Informed Content · SEO &amp; Web Analytics · Visual Storytelling. I bring research, clear content and visual communication together to create useful digital experiences.</p>
+        <p class="hero-copy">I write and publish web content, photograph campaigns and use UX research to decide what readers need next. My practice spans UX-informed content, SEO, web analytics and visual storytelling.</p>
         <div class="actions"><a class="button primary" href="#digital-work">View my work ↓</a><a class="button" href="contactme.html#contact-form">Let’s talk</a></div>
       </div>
       <div class="portrait-wrap">
@@ -353,8 +357,8 @@
 
     <section class="projects" id="digital-work">
       <div class="section-head">
-        <div><h2>Web &amp; digital content</h2><h3 class="section-subtitle">Raíz Atelier: from story to website.</h3></div>
-        <p>A self-initiated project applying audience insight, visual identity, content planning and a practical digital customer journey.</p>
+        <div><h2>Web &amp; digital content</h2><h3 class="section-subtitle">From Oaxaca to a Dublin bakery website</h3></div>
+        <p>I brought my family’s baking story from Oaxaca to a Dublin audience through a bilingual bakery website, original product photography and a seasonal campaign.</p>
       </div>
       <div class="project-grid project-grid--single">
         <article class="project project--featured">
@@ -366,27 +370,17 @@
             <h3>Raíz Atelier Mexican Bakery</h3>
             <div class="marketing-steps">
               <div class="marketing-step">
-                <span class="marketing-step-number">01</span>
-                <div><h4>OBJECTIVE</h4><p>Introduce Raíz Atelier to a local Dublin audience through a clear brand story rooted in Mexican baking, tradition and memory.</p></div>
+                <div><h4>Brand story &amp; visual identity</h4><p>I used family baking traditions to introduce the bread. The terracotta and maize palette draws on clay cookware and the colours of a Mexican kitchen.</p></div>
               </div>
               <div class="marketing-step">
-                <span class="marketing-step-number">02</span>
-                <div><h4>CREATIVE CONCEPT</h4><p>The identity evokes warmth, nostalgia and the feeling of gathering around a familiar table. Terracotta, cocoa brown, maize and warm cream reference clay cookware, chocolate, bread and everyday objects found in Mexican homes and markets.</p></div>
+                <div><h4>Seasonal content</h4><p>For Día de Muertos, I styled and photographed pan de muerto with orange flowers and papel picado. The campaign goal was to introduce the seasonal bake and make its limited availability clear.</p>
+                <a href="#raiz-seasonal-content">View the campaign photographs →</a></div>
               </div>
               <div class="marketing-step">
-                <span class="marketing-step-number">03</span>
-                <div><h4>CAMPAIGN GOALS</h4><p>Build brand recognition while communicating weekly availability, seasonal products and limited batches in a simple, consistent way.</p></div>
-              </div>
-              <div class="marketing-step">
-                <span class="marketing-step-number">04</span>
-                <div><h4>CUSTOMER JOURNEY</h4><p>Turn interest into order enquiries through a focused landing page, WhatsApp and social media, connecting brand storytelling with a practical ordering experience.</p></div>
-              </div>
-              <div class="marketing-step">
-                <span class="marketing-step-number">05</span>
-                <div><h4>BRAND PROMISE</h4><p>Raíz Atelier makes bread in small batches rather than through mass production. Each bake is prepared with care, attention to detail and love, protecting the freshness, quality and handmade character of every product.</p></div>
+                <div><h4>From menu to order enquiry</h4><p>I organised the landing page around the questions a customer brings to the menu. Visitors can check ingredients and prices, choose their bread, review the basket and send their enquiry on WhatsApp.</p></div>
               </div>
             </div>
-            <a href="RAIZ_ATELIER/raiz-atelier.html">Explore the website →</a>
+            <a href="RAIZ_ATELIER/raiz-atelier.html">Visit the Raíz Atelier website →</a>
           </div>
         </article>
       </div>
@@ -514,6 +508,7 @@
         <h3 class="bio-tagline">Curious by nature. Human-centred by design.</h3>
         <p>My path from Mexico to Canada and Ireland has shaped the way I observe, communicate and design. With a background in marketing and growing expertise in UX, I approach digital experiences with empathy, cultural awareness and a practical understanding of audiences.</p>
         <p>My work connects content planning, hands-on website development and publishing, UX research and visual storytelling. I’m continuing to develop my SEO and web analytics skills to better understand how people find and use content.</p>
+        <p><a href="about_me.html">Read my story →</a></p>
         <div class="skills"><span>UX-Informed Content</span><span>Web Content</span><span>Digital Marketing</span><span>SEO</span><span>Web Analytics</span><span>Visual Storytelling</span><span>English / Spanish</span></div>
       </div>
     </section>

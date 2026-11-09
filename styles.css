@@ -1202,3 +1202,39 @@ p3 {
 	text-decoration-thickness: 1px !important;
 	text-underline-offset: 2px !important;
 }
+
+/* Profile and contact pages share the main portfolio's keyboard navigation. */
+.profile-skip {
+	position: fixed;
+	top: 8px;
+	left: 8px;
+	z-index: 1000;
+	padding: 12px 18px;
+	background: #171713;
+	color: white;
+	transform: translateY(-160%);
+}
+.profile-skip:focus { transform: none; color: white; }
+.profile-page :focus-visible { outline: 3px solid #171713; outline-offset: 3px; box-shadow: 0 0 0 3px white; }
+.profile-page [id] { scroll-margin-top: 90px; }
+.profile-page footer, .profile-page .site-navbar { width: 100%; left: auto; transform: none; }
+.profile-page .section-label { text-align: left; padding: 0; }
+.interests-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 30px; margin-top: 24px; }
+.photo-mosaic button { min-width: 0; background: transparent; padding: 0; border: 0; cursor: zoom-in; }
+.photo-mosaic button.wide { grid-column: span 2; }
+.photo-dialog { max-width: 94vw; max-height: 95vh; padding: 12px; border: 0; background: #171713; }
+.photo-dialog::backdrop { background: rgb(0 0 0 / 85%); }
+.photo-dialog img { display: block; max-width: 100%; max-height: 72vh; margin: 8px auto; object-fit: contain; }
+.photo-dialog p { padding: 0; margin: 0; color: white; }
+@media (max-width: 700px) {
+	.interests-grid { grid-template-columns: 1fr; }
+	.profile-page .about-hero-text { min-width: 0; width: 100%; }
+	.profile-page .contactbox { flex-direction: column; align-items: center; }
+	.profile-page .formcontainer, .profile-page .contactpic { flex: none; min-width: 0; width: 100%; }
+	.profile-page .about-hero-photo { object-position: center 28%; }
+	.profile-page footer { flex-wrap: wrap; gap: 12px; padding: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.profile-page, html:has(.profile-page) { scroll-behavior: auto; }
+	.profile-page *, .profile-page *::before, .profile-page *::after { transition: none !important; animation: none !important; }
+}
